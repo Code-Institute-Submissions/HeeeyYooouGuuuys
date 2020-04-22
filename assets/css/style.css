@@ -12,6 +12,14 @@ body {
     background-size: cover;
 }
 
+.intro-text {
+    background-color: pink;
+    margin: 4rem;
+    text-align: center;
+    border-radius: 1px;
+    border: 3px solid lime;
+}
+
 /* About Modal */
 
  /* The Modal (background) */
