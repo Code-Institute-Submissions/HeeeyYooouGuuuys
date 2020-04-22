@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
 body {
     font-family: "Press Start 2P", sans-serif;
@@ -12,12 +12,21 @@ body {
     background-size: cover;
 }
 
+body p {
+    font-family: "VT323", sans-serif;
+    font-size: 1.4rem;
+}
+
 .intro-text {
-    background-color: pink;
+    background-image: linear-gradient(rgba(67, 1, 67, 0.9), rgba(244, 136, 154, 0.9));
     margin: 4rem;
     text-align: center;
     border-radius: 1px;
     border: 3px solid lime;
+}
+
+.intro-text h2 {
+    margin-top: 1rem;
 }
 
 /* About Modal */
