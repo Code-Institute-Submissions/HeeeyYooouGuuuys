@@ -26,12 +26,20 @@ window.onclick = function(event) {
 
 // Audio //
 
-var bgm = document.getElementById("chipAudio"); 
+let myAudio = document.getElementById("bgm");
+let isPlaying = false;
 
-function playAudio() { 
-  bgm.play(); 
-} 
+function togglePlay() {
+  if (isPlaying) {
+    bgm.pause()
+  } else {
+    bgm.play();
+  }
+};
+bgm.onplaying = function() {
+  isPlaying = true;
+};
+bgm.onpause = function() {
+  isPlaying = false;
+};
 
-function pauseAudio() { 
-  bgm.pause(); 
-} 

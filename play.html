@@ -46,14 +46,8 @@
 </div> 
 	</header>
     <!--Audio-->
-    <audio id="chipAudio">
-  <source src="../../assets/audio/Chiptronical.ogg" type="audio/ogg">
-  Your browser does not support the audio element.
-    </audio>
-	<!--Callout-->
-    <section>
-    Call out to go here if needed
-	</section>
+<audio loop id="bgm" src="../../assets/audio/Chiptronical.ogg" preload="auto">
+</audio>
     <!--Main section-->
         <section class="container-fluid main-content">
     <div class="row">
@@ -75,9 +69,7 @@
 						role="button">Hard</a>
                 </div>
                 <div class="text-center">
-					<a class="btn general-button" onclick="playAudio()"
-						href="" 
-						role="button">Music: on/off</a>
+					<a class="btn music-button" onClick="togglePlay()" role="button">Music on/off</a>
                 </div>
 			</div>
 		</div>

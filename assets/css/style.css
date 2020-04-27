@@ -72,14 +72,20 @@ body p {
 
 /* buttons */
 
-.general-button {
+.general-button, .music-button {
     margin: 15px 0 30px 0;
     background-color: yellow;
     border: 3px solid pink;
     border-radius: 0px;
+    color: black;
 }
 
-.general-button:hover {
+a:not([href]) {
+    color: black;
+    text-decoration: none;
+}
+
+.general-button:hover, .music-button:hover {
     margin: 15px 0 30px 0;
     border-radius: 0px;
     background-color: #aa3232;
