@@ -26,7 +26,7 @@ window.onclick = function(event) {
 
 // Audio //
 
-let myAudio = document.getElementById("bgm");
+let bgm = document.getElementById("bgm");
 let isPlaying = false;
 
 function togglePlay() {
