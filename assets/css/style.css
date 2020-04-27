@@ -4,7 +4,6 @@ body {
     font-family: "Press Start 2P", sans-serif;
     color: #fff;
     margin: 0;
-    min-height: 60vh;
     background-image: url("../../assets/img/synthwave-background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -15,6 +14,10 @@ body {
 body p {
     font-family: "VT323", sans-serif;
     font-size: 1.4rem;
+}
+
+.main-content {
+    min-height: 77vh;
 }
 
 .intro-text {
@@ -66,3 +69,32 @@ body p {
   text-decoration: none;
   cursor: pointer;
 } 
+
+/* buttons */
+
+.general-button {
+    margin: 15px 0 30px 0;
+    background-color: yellow;
+    border: 3px solid pink;
+    border-radius: 0px;
+}
+
+.general-button:hover {
+    margin: 15px 0 30px 0;
+    border-radius: 0px;
+    background-color: #aa3232;
+    color: #fcfcfc;
+        transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+/* Footer */
+
+footer{
+  width: 100%;
+  color: #fff;
+  bottom: 0;
+  text-align: center;
+}
