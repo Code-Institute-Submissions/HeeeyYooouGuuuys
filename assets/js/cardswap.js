@@ -23,3 +23,15 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 } 
+
+// Audio //
+
+var bgm = document.getElementById("chipAudio"); 
+
+function playAudio() { 
+  bgm.play(); 
+} 
+
+function pauseAudio() { 
+  bgm.pause(); 
+} 
