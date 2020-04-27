@@ -72,7 +72,15 @@ body p {
 
 /* buttons */
 
-.general-button, .music-button {
+.general-button {
+    margin: 15px 0 30px 0;
+    background-color: yellow;
+    border: 3px solid pink;
+    border-radius: 0px;
+    color: black;
+}
+
+#music-button {
     margin: 15px 0 30px 0;
     background-color: yellow;
     border: 3px solid pink;
@@ -86,6 +94,17 @@ a:not([href]) {
 }
 
 .general-button:hover, .music-button:hover {
+    margin: 15px 0 30px 0;
+    border-radius: 0px;
+    background-color: #aa3232;
+    color: #fcfcfc;
+        transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#music-button:hover {
     margin: 15px 0 30px 0;
     border-radius: 0px;
     background-color: #aa3232;

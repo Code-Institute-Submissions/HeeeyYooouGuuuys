@@ -28,6 +28,7 @@ window.onclick = function(event) {
 
 let bgm = document.getElementById("bgm");
 let isPlaying = false;
+let musicButtonToggle = document.getElementById("music-button")
 
 function togglePlay() {
   if (isPlaying) {
@@ -38,8 +39,14 @@ function togglePlay() {
 };
 bgm.onplaying = function() {
   isPlaying = true;
+  musicButtonToggle.innerHTML = "Music: on";
 };
 bgm.onpause = function() {
   isPlaying = false;
+  musicButtonToggle.innerHTML = "Music: off"
 };
+
+
+
+
 
