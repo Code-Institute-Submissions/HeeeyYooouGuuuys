@@ -118,6 +118,14 @@ a:not([href]) {
     -o-transition: all 0.3s ease-in-out;
 }
 
+/* Game */
+
+.gamebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Footer */
 
 footer{
