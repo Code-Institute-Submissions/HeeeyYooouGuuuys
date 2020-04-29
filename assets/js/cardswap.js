@@ -28,10 +28,13 @@ span[1].onclick = function() {
 }
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modal[0]) {
+        modal[0].style.display = "none";
     }
-}
+    if (event.target == modal[1]) {
+        modal[1].style.display = "none";
+    }
+};
 
 // Audio //
 
