@@ -124,7 +124,13 @@ a:not([href]) {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 640px; /* added from freecodecamp - amend/remove */
+    height: 640px; /* added from freecodecamp - amend/remove */
+    margin: auto;
+    flex-wrap: wrap;
+    background: green
 }
+
 
 /* Footer */
 
