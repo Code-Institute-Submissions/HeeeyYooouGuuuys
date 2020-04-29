@@ -63,6 +63,7 @@ body p {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-left: auto;
 }
 
 .close:hover,

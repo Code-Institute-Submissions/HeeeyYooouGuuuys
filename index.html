@@ -32,7 +32,7 @@
         <a class="nav-link" href="play.html">Play</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="aboutButton" href="#">About</a>
+        <a class="nav-link modalOpen" id="aboutButton" href="#">About</a>
       </li>
       </ul>
   </div>
@@ -42,9 +42,16 @@
 <div id="aboutModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    <p>about modal</p>
   </div>
 </div> 
+<!-- Credit Modal -->
+<div id="creditModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="creditClose">&times;</span>
+    <p>credit modal</p>
+  </div>
+</div>
 	</header>
 	<!--Callout-->
     <section class="container-fluid main-content">
@@ -65,7 +72,7 @@
 	<footer class="container-fluid" id="footer-details" >
 		<div class="row">
 			<div class="col-sm-4">
-				<h5>Media Credit</h5>
+				<a id="creditButton" class="modalOpen" href="#">Media Credits</a>
 			</div>
 			<div class="col-sm-4">
 				<h5>Footer sub-heading</h5>
