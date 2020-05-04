@@ -20,7 +20,8 @@ body p {
     min-height: 77vh;
 }
 
-.intro-text {
+.intro-text,
+.difficulty-text {
     background-image: linear-gradient(rgba(67, 1, 67, 0.9), rgba(244, 136, 154, 0.9));
     margin: 4rem;
     text-align: center;
@@ -29,7 +30,8 @@ body p {
     
 }
 
-.intro-text h2 {
+.intro-text h2,
+.difficulty-text h2 {
     margin-top: 1rem;
 }
 
