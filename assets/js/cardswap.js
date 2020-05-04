@@ -38,14 +38,9 @@ window.onclick = function(event) {
 
 // Game //
 
-function easyGame() {
-  var x = document.getElementById("gameBox");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-} 
+
+
+
 
 // Audio //
 
