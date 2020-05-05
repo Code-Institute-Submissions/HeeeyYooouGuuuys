@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Press Start 2P", sans-serif;
     color: #fff;
@@ -124,14 +128,27 @@ a:not([href]) {
 /* Game */
 
 .gamebox {
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
     width: 640px; /* added from freecodecamp - amend/remove */
     height: 640px; /* added from freecodecamp - amend/remove */
     margin: auto;
     flex-wrap: wrap;
-    background: green
+    background: green;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto); 
+}
+
+.card {
+  background: white;
+  height: 8em;
+  /*width: 8em;*/
+  margin: 0.5em;
+
 }
 
 
