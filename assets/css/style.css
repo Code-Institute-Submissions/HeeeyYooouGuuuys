@@ -128,14 +128,7 @@ a:not([href]) {
 /* Game */
 
 .gamebox {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    width: 640px; /* added from freecodecamp - amend/remove */
-    height: 640px; /* added from freecodecamp - amend/remove */
-    margin: auto;
-    flex-wrap: wrap;
-    background: green;
+
 }
 
 .card-container {
@@ -143,12 +136,17 @@ a:not([href]) {
     grid-template-columns: repeat(4, auto); 
 }
 
+.card-row {
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+}
+
 .card {
   background: white;
-  height: 8em;
-  /*width: 8em;*/
-  margin: 0.5em;
-
+  height: 175px;
+  width: 125px;
+  margin: 5px;
 }
 
 
