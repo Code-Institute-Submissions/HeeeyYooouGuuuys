@@ -158,3 +158,13 @@ footer{
   bottom: 0;
   text-align: center;
 }
+
+/* media queries */
+
+@media only screen and (max-width: 575px) {
+  .card {
+    height: 75px;
+    width: 60px;
+    }
+}
+
