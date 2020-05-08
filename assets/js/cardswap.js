@@ -38,11 +38,11 @@ window.onclick = function(event) {
 
 // Game //
 
-// jQuery to hide difficulty-text and gameBox cards //
+// jQuery to hide difficulty-text and gameBox cards when difficulty button clicked//
 $('#gameBox').hide();
-$('.difficulty-text').on('click',
+$('.difficulty-button').on('click',
   function() {
-    $('.difficulty-text, #gameBox').toggle(200);
+    $('.difficulty-text, #gameBox').toggle();
   }
 );
 
