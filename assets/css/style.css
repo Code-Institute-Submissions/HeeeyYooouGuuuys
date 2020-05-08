@@ -39,6 +39,10 @@ body p {
     margin-top: 1rem;
 }
 
+.difficulty-text {
+    display: block;
+}
+
 /* About Modal */
 
  /* The Modal (background) */
@@ -108,10 +112,8 @@ a:not([href]) {
     border-radius: 0px;
     background-color: #aa3232;
     color: #fcfcfc;
-        transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
 }
 
 #music-button:hover {
@@ -119,22 +121,20 @@ a:not([href]) {
     border-radius: 0px;
     background-color: #aa3232;
     color: #fcfcfc;
-        transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
 }
 
 /* Game */
 
 .gamebox {
-
+    display: none;
 }
 
-.card-container {
+/*.card-container {
     display: grid;
     grid-template-columns: repeat(4, auto); 
-}
+} */
 
 .card-row {
     margin-left: 20px;

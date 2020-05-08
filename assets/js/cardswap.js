@@ -38,7 +38,13 @@ window.onclick = function(event) {
 
 // Game //
 
-
+// jQuery to hide difficulty-text and gameBox cards //
+$('#gameBox').hide();
+$('.difficulty-text').on('click',
+  function() {
+    $('.difficulty-text, #gameBox').toggle(200);
+  }
+);
 
 
 
