@@ -150,11 +150,15 @@ a:not([href]) {
   height: 175px;
   width: 125px;
   margin: 5px;
+
 }
 
-.card-back {
-    
+.card-back:hover {
+    border: 5px solid lime;
+    transition: all 0.1s ease-in-out;
 }
+
+
 
 
 
