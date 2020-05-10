@@ -46,7 +46,15 @@ $('.difficulty-button').on('click',
   }
 );
 
+// flip card on click functionality
 
+let card = document.querySelectorAll(".card")
+
+function cardFlip() {
+    this.classList.toggle("flipped");
+}
+
+card.forEach(card => card.addEventListener("click", cardFlip))
 
 // Audio //
 
