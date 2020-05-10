@@ -133,6 +133,11 @@ a:not([href]) {
 
 .game-info-container {
     display: flex;
+    justify-content: space-between;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
 }
 
 .card-row {
