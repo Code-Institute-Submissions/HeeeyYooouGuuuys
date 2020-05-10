@@ -147,11 +147,16 @@ a:not([href]) {
 }
 
 .card {
-  background: white;
   height: 175px;
   width: 125px;
   margin: 5px;
 }
+
+.card-back {
+    
+}
+
+
 
 
 /* Footer */
