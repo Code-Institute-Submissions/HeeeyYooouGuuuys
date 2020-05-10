@@ -94,7 +94,7 @@ body p {
     color: black;
 }
 
-#music-button {
+#music-button, #music-button-game {
     margin: 15px 0 30px 0;
     background-color: yellow;
     border: 3px solid pink;
@@ -107,7 +107,7 @@ a:not([href]) {
     text-decoration: none;
 }
 
-.general-button:hover, .music-button:hover {
+.general-button:hover, .music-button:hover, {
     margin: 15px 0 30px 0;
     border-radius: 0px;
     background-color: #aa3232;

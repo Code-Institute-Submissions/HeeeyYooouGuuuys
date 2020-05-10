@@ -53,6 +53,7 @@ $('.difficulty-button').on('click',
 let bgm = document.getElementById("bgm");
 let isPlaying = false;
 let musicButtonToggle = document.getElementById("music-button")
+let musicButtonToggleGame = document.getElementById("music-button-game")
 
 function togglePlay() {
   if (isPlaying) {
@@ -68,6 +69,14 @@ bgm.onplaying = function() {
 bgm.onpause = function() {
   isPlaying = false;
   musicButtonToggle.innerHTML = "Music: off"
+};
+bgm.onplaying = function() {
+  isPlaying = true;
+  musicButtonToggleGame.innerHTML = "Music: on";
+};
+bgm.onpause = function() {
+  isPlaying = false;
+  musicButtonToggleGame.innerHTML = "Music: off"
 };
 
 
