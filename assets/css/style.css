@@ -156,6 +156,8 @@ a:not([href]) {
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 
 }
