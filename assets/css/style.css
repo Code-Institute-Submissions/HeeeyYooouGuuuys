@@ -160,15 +160,6 @@ a:not([href]) {
 
 }
 
-.card.flipped {
-    transform: rotateY(180deg);
-    -webkit-transform:rotateY(180deg);
-    -moz-transform:rotateY(180deg);
-    -ms-transform:rotateY(180deg);
-    -o-transform:rotateY(180deg);
-
-}
-
 .card-back,
 .card-front {
     position: absolute;
@@ -194,6 +185,15 @@ a:not([href]) {
 .card-back:hover {
     border: 5px solid lime;
     transition: all 0.1s ease-in-out;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+
 }
 
 
