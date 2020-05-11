@@ -72,7 +72,7 @@ function togglePlay() {
 };
 bgm.onplaying = function() {
   isPlaying = true;
-  musicButtonToggle.innerHTML = "Music: on";
+  musicButtonToggle.innerHTML = "Music: on"
 };
 bgm.onpause = function() {
   isPlaying = false;
@@ -80,7 +80,7 @@ bgm.onpause = function() {
 };
 bgm.onplaying = function() {
   isPlaying = true;
-  musicButtonToggleGame.innerHTML = "Music: on";
+  musicButtonToggleGame.innerHTML = "Music: on"
 };
 bgm.onpause = function() {
   isPlaying = false;

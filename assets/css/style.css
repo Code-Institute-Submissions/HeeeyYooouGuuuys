@@ -144,8 +144,9 @@ a:not([href]) {
     margin-left: 20px;
     margin-right: 20px;
     justify-content: center;
-    perspective: 1000px;
-    -webkit-perspective: 1000px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    
 }
 
 .card {
@@ -159,11 +160,13 @@ a:not([href]) {
   -webkit-transition: transform 0.5s;
   -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
 
 }
 
-.card-back,
-.card-front {
+.card-front,
+.card-back  {
     position: absolute;
     width: 100%;
     height: 100%;
