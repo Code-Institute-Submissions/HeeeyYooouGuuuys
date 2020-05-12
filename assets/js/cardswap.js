@@ -52,6 +52,7 @@ let card = document.querySelectorAll(".card")
 
 function cardFlip() {
     this.classList.toggle("flipped");
+    console.log("i was flipped");
 }
 
 card.forEach(card => card.addEventListener("click", cardFlip))
