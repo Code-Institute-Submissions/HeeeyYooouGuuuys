@@ -129,6 +129,8 @@ a:not([href]) {
 
 .gamebox {
     display: none;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .game-info-container {
@@ -144,8 +146,6 @@ a:not([href]) {
     margin-left: 20px;
     margin-right: 20px;
     justify-content: center;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
     
 }
 
@@ -154,22 +154,12 @@ a:not([href]) {
   width: 125px;
   margin: 5px;
   position: relative;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  transition: transform 0.5s;
-  -webkit-transition: transform 0.5s;
-  -webkit-backface-visibility: hidden; 
-  backface-visibility: hidden;
 
 }
 
 .card.flipped {
     transform: rotateY(180deg);
-    -webkit-transform:rotateY(180deg);
-    -moz-transform:rotateY(180deg);
-    -ms-transform:rotateY(180deg);
-    -o-transform:rotateY(180deg);
-
+    -webkit-transform: rotateY(180deg);
 }
 
 .card-front,
@@ -177,36 +167,20 @@ a:not([href]) {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
-    -webkit-backface-visibility:hidden;
-    -moz-backface-visibility:hidden;
-    -ms-backface-visibility:hidden;
-    -o-backface-visibility:hidden;
-
+    /*backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;*/
 }
 
 .card-front {
     transform: rotateY(180deg);
-    -webkit-transform:rotateY(180deg);
-    -moz-transform:rotateY(180deg);
-    -ms-transform:rotateY(180deg);
-    -o-transform:rotateY(180deg);
-    
+    -webkit-transform: rotateY(180deg);
+
 }
 
-.card-back:hover {
+/*.card-back:hover {
     border: 5px solid lime;
     transition: all 0.1s ease-in-out;
-}
-
-
-
-
-
-
-
-
-
+}*/
 
 /* Footer */
 
