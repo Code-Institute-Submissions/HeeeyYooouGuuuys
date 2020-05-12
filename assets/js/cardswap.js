@@ -72,20 +72,18 @@ function togglePlay() {
 };
 bgm.onplaying = function() {
   isPlaying = true;
-  musicButtonToggle.innerHTML = "Music: on"
+  musicButtonToggle.innerHTML = "Music: on";
+  musicButtonToggleGame.innerHTML = "Music: on";
 };
 bgm.onpause = function() {
   isPlaying = false;
-  musicButtonToggle.innerHTML = "Music: off"
-};
-bgm.onplaying = function() {
-  isPlaying = true;
-  musicButtonToggleGame.innerHTML = "Music: on"
-};
-bgm.onpause = function() {
-  isPlaying = false;
+  musicButtonToggle.innerHTML = "Music: off";
   musicButtonToggleGame.innerHTML = "Music: off"
 };
+
+
+
+
 
 
 
