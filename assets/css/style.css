@@ -116,14 +116,14 @@ a:not([href]) {
 
 }
 
-#music-button:hover {
+/*#music-button:hover {
     margin: 15px 0 30px 0;
     border-radius: 0px;
     background-color: #aa3232;
     color: #fcfcfc;
     transition: all 0.3s ease-in-out;
 
-}
+}*/
 
 /* Game */
 
@@ -141,6 +141,12 @@ a:not([href]) {
     margin-top: 2vh;
 }
 
+.game-rows-container {
+    perspective: 10000px;
+    -webkit-perspective: 10000px;
+    -moz-perspective: 10000px;
+}
+
 .card-row {
     margin-left: 20px;
     margin-right: 20px;
@@ -153,7 +159,16 @@ a:not([href]) {
   width: 125px;
   margin: 5px;
   position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
   
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg); 
+
 }
 
 .card.flipped .card-front{
@@ -171,8 +186,7 @@ a:not([href]) {
     -ms-backface-visibility:hidden;
     -o-backface-visibility:hidden;
     backface-visibility:hidden;
-    
-    
+        
 }
 
 .card-back {
@@ -180,11 +194,9 @@ a:not([href]) {
 }
 
 .card-front {
-    -webkit-transform:rotateY(0deg);
-    -moz-transform:rotateY(0deg);
-    -ms-transform:rotateY(0deg);
-    -o-transform:rotateY(0deg);
-    transform:rotateY(0deg);
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
     
 }
 
