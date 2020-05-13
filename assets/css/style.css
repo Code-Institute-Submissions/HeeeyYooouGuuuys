@@ -166,16 +166,16 @@ a:not([href]) {
 }
 
 .card.flipped {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-      -ms-transform: rotateY(180deg); 
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+      -ms-transform: rotateY(-180deg); 
 
 }
 
-.card.flipped .card-front{
+/*.card.flipped .card-front{
     z-index: 10;
     
-}
+}*/
 
 .card-back,
 .card-front {
@@ -191,14 +191,14 @@ a:not([href]) {
         
 }
 
-.card-back {
+/*.card-back {
     z-index: 1;
-}
+}*/
 
 .card-front {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-      -ms-transform: rotateY(180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+      -ms-transform: rotateY(-180deg);
     
 }
 
