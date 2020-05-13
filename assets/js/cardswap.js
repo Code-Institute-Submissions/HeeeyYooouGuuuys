@@ -1,15 +1,10 @@
 // Modals
 
-// Get the modal
 let modal = document.getElementsByClassName('modal');
-
-// Get the button that opens the modal
 let btn = document.getElementsByClassName("modalOpen");
-
-// Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close");
 
-// When the user clicks the button, open the modal 
+// Open modal 
 btn[0].onclick = function() {
     modal[0].style.display = "block";
 }
@@ -17,7 +12,7 @@ btn[0].onclick = function() {
 btn[1].onclick = function() {
     modal[1].style.display = "block";
 }
-// When the user clicks on <span> (x), close the modal
+// close on x
 span[0].onclick = function() {
     modal[0].style.display = "none";
 }
@@ -25,7 +20,7 @@ span[0].onclick = function() {
 span[1].onclick = function() {
     modal[1].style.display = "none";
 }
-// When the user clicks anywhere outside of the modal, close it
+// click outside modal close
 window.onclick = function(event) {
     if (event.target == modal[0]) {
         modal[0].style.display = "none";
@@ -51,8 +46,7 @@ let card = document.querySelectorAll(".card")
 
 function cardFlip() {
     this.classList.toggle("flipped");
-    console.log("i was flipped");
-}
+};
 
 card.forEach(card => card.addEventListener("click", cardFlip))
 
