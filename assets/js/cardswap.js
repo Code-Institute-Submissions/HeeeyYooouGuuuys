@@ -6,7 +6,6 @@ let modal = document.getElementsByClassName('modal');
 // Get the button that opens the modal
 let btn = document.getElementsByClassName("modalOpen");
 
-
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close");
 

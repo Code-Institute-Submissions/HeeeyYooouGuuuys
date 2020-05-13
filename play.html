@@ -127,25 +127,32 @@ https://www.pexels.com/photo/vintage-technology-calling-numbers-105003/
       <!-- Game -->
       
       <div class="row gamebox" id="gameBox">
-        <div class="game-info-container">
-            <div class="game-info">
-            moves: <span id="total-moves">0</span>
+        <div class="row game-info-container">
+            <div class="col game-info general-button btn text-center">
+            Moves: <span id="total-moves">0</span>
             </div>
-            <div class="game-info">
-            time: <span id="total-time">0</span>
+            <div class="col game-info general-button btn text-center">
+            Time: <span id="total-time">0</span>
             </div>
-      </div>
-      <div class="row gamecontrols">
-      <div class="text-center">
+            <div class="col text-center">
             <a
               class="btn music-button"
               id="music-button-game"
               onClick="togglePlay()"
               role="button"
               >Music: off</a>
-          </div>
+        </div>
+        <div class="col game-info general-button btn text-center">
+            <a
+              class="btn reset-button"
+              id="reset-button"
+              onClick=""
+              role="button"
+              >reset</a>
+        </div>
       </div>
-      <div class="game-rows-container">
+      
+      <div class="card-rows-container">
         <div class="row card-row">
             <div class="card">
                 <img class="card-back" src="assets/img/cassette.jpg" alt="cassette" />

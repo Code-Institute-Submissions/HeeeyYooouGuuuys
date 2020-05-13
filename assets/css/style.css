@@ -137,14 +137,13 @@ a:not([href]) {
     justify-content: space-between;
     margin-left: 20vw;
     margin-right: 20vw;
-    margin-bottom: 3vh;
-    margin-top: 2vh;
+
 }
 
-.game-rows-container {
-    perspective: 800px;
+.card-rows-container {
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
+    perspective: 800px;
 }
 
 .card-row {
@@ -159,7 +158,9 @@ a:not([href]) {
   width: 150px;
   margin: 5px;
   position: relative;
+  -webkit-transition: transform 0.8s;
   transition: transform 0.8s;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   
 }
@@ -186,6 +187,7 @@ a:not([href]) {
     -ms-backface-visibility:hidden;
     -o-backface-visibility:hidden;
     backface-visibility:hidden;
+    transform-style: preserve-3d;
         
 }
 
@@ -200,10 +202,10 @@ a:not([href]) {
     
 }
 
-/*.card-back:hover {
+.card-back:hover {
     border: 5px solid lime;
     transition: all 0.1s ease-in-out;
-}*/
+}
 
 /* Footer */
 
