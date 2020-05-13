@@ -160,7 +160,6 @@ a:not([href]) {
   margin: 5px;
   position: relative;
   transition: transform 0.8s;
-  -webkit-transition: webkit-transform 0.8ms;
   transform-style: preserve-3d;
   
 }
