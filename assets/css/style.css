@@ -142,9 +142,9 @@ a:not([href]) {
 }
 
 .game-rows-container {
-    perspective: 10000px;
-    -webkit-perspective: 10000px;
-    -moz-perspective: 10000px;
+    perspective: 800px;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
 }
 
 .card-row {
@@ -156,7 +156,7 @@ a:not([href]) {
 
 .card {
   height: 175px;
-  width: 125px;
+  width: 150px;
   margin: 5px;
   position: relative;
   transition: transform 0.8s;
