@@ -32,7 +32,7 @@ body p {
     margin: 1rem;
     text-align: center;
     border-radius: 1px;
-    border: 3px solid rgb(21, 255, 0);
+    border: 3px solid rgb(0, 255, 102);
         
 }
 
@@ -198,11 +198,6 @@ a:not([href]) {
 
 }
 
-/*.card.flipped .card-front{
-    z-index: 10;
-    
-}*/
-
 .card-back,
 .card-front {
     position: absolute;
@@ -217,10 +212,6 @@ a:not([href]) {
         
 }
 
-/*.card-back {
-    z-index: 1;
-}*/
-
 .card-front {
     transform: rotateY(-180deg);
     -webkit-transform: rotateY(-180deg);
@@ -229,7 +220,7 @@ a:not([href]) {
 }
 
 .card-back:hover {
-    border: 5px solid lime;
+    border: 5px solid rgb(0, 255, 102);
     transition: all 0.1s ease-in-out;
 }
 
@@ -252,8 +243,8 @@ footer a {
 
 footer a:hover {
     text-decoration: none;
-    color: lime;
-    transition: 0.2s;
+    color: rgb(0, 255, 102);
+    transition: 0.6s;
 }
 
 /* media queries */
