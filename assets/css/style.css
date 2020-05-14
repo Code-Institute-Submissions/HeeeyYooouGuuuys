@@ -28,7 +28,7 @@ body p {
 
 .intro-text,
 .difficulty-text {
-    background-image: linear-gradient(rgba(67, 1, 67, 0.9), rgba(244, 136, 154, 0.9));
+    background-image: linear-gradient(rgba(133, 25, 234, 0.9), rgba(241, 23, 241, 0.9));
     margin: 1rem;
     text-align: center;
     border-radius: 1px;
@@ -62,12 +62,30 @@ body p {
 
 /* Modal Content/Box */
 .modal-content {
-  background-image: linear-gradient(rgba(67, 1, 67, 0.9), rgba(244, 136, 154, 0.9));
+  -webkit-animation: modal-content 25s linear infinite alternate both;
+	        animation: modal-content 25s linear infinite alternate both;
   margin: 10% auto; 
   padding: 20px;
   border: 3px solid rgb(176, 59, 59);
   width: 80%; 
   overflow-wrap: normal;
+}
+
+@-webkit-keyframes modal-content {
+  0% {
+    background: #8519ea;
+  }
+  100% {
+    background: #f117f1;
+  }
+}
+@keyframes modal-content {
+  0% {
+    background: #8519ea;
+  }
+  100% {
+    background: #f117f1;
+  }
 }
 
 .modal-content p {
@@ -222,6 +240,20 @@ footer{
   color: #fff;
   bottom: 0;
   text-align: center;
+  
+}
+
+footer a {
+    color: inherit;
+     font-family: "VT323", sans-serif;
+    font-size: 2rem;
+    text-shadow: #000000 1px 1px;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: lime;
+    transition: 0.2s;
 }
 
 /* media queries */
