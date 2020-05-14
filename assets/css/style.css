@@ -66,7 +66,7 @@ body p {
 	        animation: modal-content 25s linear infinite alternate both;
   margin: 10% auto; 
   padding: 20px;
-  border: 3px solid rgb(176, 59, 59);
+  border: 3px solid rgb(0, 255, 102);
   width: 80%; 
   overflow-wrap: normal;
 }
@@ -141,15 +141,6 @@ a:not([href]) {
     transition: all 0.3s ease-in-out;
 
 }
-
-/*#music-button:hover {
-    margin: 15px 0 30px 0;
-    border-radius: 0px;
-    background-color: #aa3232;
-    color: #fcfcfc;
-    transition: all 0.3s ease-in-out;
-
-}*/
 
 /* Game */
 
