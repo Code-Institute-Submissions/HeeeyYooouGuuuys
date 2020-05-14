@@ -175,8 +175,8 @@ a:not([href]) {
   width: 150px;
   margin: 5px;
   position: relative;
-  -webkit-transition: transform 0.8s;
-  transition: transform 0.8s;
+  -webkit-transition: transform 0.4s;
+  transition: transform 0.4s;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   
