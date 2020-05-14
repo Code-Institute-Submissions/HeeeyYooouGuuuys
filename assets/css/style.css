@@ -219,6 +219,28 @@ a:not([href]) {
     
 }
 
+.card-back{
+  -webkit-animation: modal-content 2s linear infinite alternate both;
+	        animation: modal-content 2s linear infinite alternate both;
+}
+
+@-webkit-keyframes card-back {
+  0% {
+    background: #8519ea;
+  }
+  100% {
+    background: #f117f1;
+  }
+}
+@keyframes card-back {
+  0% {
+    background: #8519ea;
+  }
+  100% {
+    background: #f117f1;
+  }
+}
+
 .card-back:hover {
     border: 5px solid rgb(0, 255, 102);
     transition: all 0.1s ease-in-out;
