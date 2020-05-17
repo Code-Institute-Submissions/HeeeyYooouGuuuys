@@ -26,8 +26,7 @@ body p {
     min-height: 77vh;
 }
 
-.intro-text,
-.difficulty-text {
+.intro-text {
     background-image: linear-gradient(rgba(133, 25, 234, 0.9), rgba(241, 23, 241, 0.9));
     margin: 1rem;
     text-align: center;
@@ -36,13 +35,8 @@ body p {
         
 }
 
-.intro-text h2,
-.difficulty-text h2 {
+.intro-text h2 {
     margin-top: 1rem;
-}
-
-.difficulty-text {
-    display: block;
 }
 
 /* About Modal */
@@ -145,8 +139,7 @@ a:not([href]) {
 /* Game */
 
 .gamebox {
-    display: none;
-    
+ display: block;    
 }
 
 .game-info-container {
@@ -235,6 +228,27 @@ a:not([href]) {
 .card-back:hover {
     border: 5px solid rgb(0, 255, 102);
     transition: all 0.1s ease-in-out;
+}
+
+.overlay {
+    display:none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    width: 80%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.overlay.visible {
+    display: flex;
 }
 
 /* Footer */
