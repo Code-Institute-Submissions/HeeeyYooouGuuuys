@@ -40,6 +40,22 @@ $('.difficulty-button').on('click',
   }
 );
 
+let cards = Array.from(document.getElementsByClassName("card"));
+
+class cardSwap {
+    constructor(totalTime, cards) {
+        this.cardArray = cards;
+        this.totalTime = totalTime;
+        this.timer = document.getElementById("total-time");
+        this.ticker = document.getElementById("total-moves");
+    }
+    startGame() {
+        this.totalMoves = 0;
+        this.matchedCards = [];
+        this.totalTime = 0;
+    }
+}
+
 // flip card on click functionality
 
 let card = document.querySelectorAll(".card")
