@@ -4,68 +4,77 @@ if(document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 } else {
     ready();
+    console.log("ready");
 }
 
 function ready() {
-    let card = Array.from(document.getElementsByClassName("card"));
+    let cards = Array.from(document.getElementsByClassName("card"));
     let overlay = Array.from(document.getElementsByClassName("overlay"));
-
-    // card.forEach(card => card.addEventListener("click", cardFlip));
-    // };
+    let game = new cardSwap;
+    
+    
     overlay.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
-            // game.startGame();
+            game.startGame();
         });
     });
-    card.forEach(card => {
+    cards.forEach(card => {
         card.addEventListener('click', () => {
-            this.cardFlip(card);
+            game.cardFlip(card);
         });
     });
 }
 
 
-
-
-/*function cardFlip() {
-    this.classList.toggle("flipped");
-}
-
-
-
-/*class cardSwap {
+class cardSwap {
     constructor(totalTime, cards) {
         this.cardArray = cards;
         this.totalTime = totalTime;
         this.timer = document.getElementById("total-time");
-        this.counter = document.getElementById("total-moves");
+        this.totalFlips = document.getElementById("totalTurns").innerHTML;
+        
     }
     startGame() {
-        this.totalMoves = 0;
+        this.counter = 0;
+        this.totalFlips = 0;
         this.matchedCards = [];
         this.totalTime = 0;
         this.audioEvents = new AudioEvents();
+        this.audioEvents.musicStart();
+        console.log("started game");
     }
+    cardFlip(card) {
+    card.classList.toggle("flipped");
+    this.audioEvents.cardFlipAudio();
+    this.counter++;
+    this.counter.innerHTML = this.counter;
+    console.log(this);
+    console.log("flipped card");
+    }
+
+
 }
 
 class AudioEvents {
     constructor() {
-        this.gameOverAudio = new Audio("assets/audio/fail.wav");
-        this.gameSuccessAudio = new Audio("assets/audio/success.wav");
-        this.flipAudio = new Audio("assets/audio/card-flip.wav");
-        this.cardMatchAudio = new Audio("assets/audio/coin.wav");
-        this.cardNoMatchAudio = new Audio("assets/audio/incorrect.wav")
-        this.BGM = new Audio("assets/audio/Chiptronical.ogg")
-        BGM.volume  = 0.8;
+        this.gameOverAudio = new Audio("../../assets/audio/fail.wav");
+        this.gameSuccessAudio = new Audio("../../assets/audio/success.wav");
+        this.flipAudio = new Audio("../../assets/audio/card-flip.wav");
+        this.cardMatchAudio = new Audio("../../assets/audio/coin.wav");
+        this.cardNoMatchAudio = new Audio("../../assets/audio/incorrect.wav")
+        this.BGM = new Audio("../../assets/audio/Chiptronical.ogg")
+        this.BGM.volume  = 0.3;
     }
     gameOver() {
-        this.gameOverAudio.play()
+        this.musicFade();
+        this.gameOverAudio.play();
     }
     gameSuccess() {
-        this.gameSuccessAudio.play()
+        this.musicFade();
+        this.gameSuccessAudio.play();
     }     
-    cardFlip() {
+    cardFlipAudio() {
         this.flipAudio.play();
     }
     cardMatch() {
@@ -73,6 +82,16 @@ class AudioEvents {
     }
     cardNomatch() {
         this.cardNoMatchAudio.play()
+    }
+    musicStart() {
+        this.BGM.play()
+    }
+    musicFade() {
+        this.BGM.fadeOut = true;
+        this.BGM.fadeOutDuration = 5;
+    }
+    musicPause() {
+        this.BGM.pause();
     }
 }
 
