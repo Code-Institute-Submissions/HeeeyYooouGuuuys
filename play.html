@@ -17,7 +17,7 @@
       type="text/css"
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <script type="text/javascript" src="assets/js/cardswap.js" defer></script>
+    <script type="text/javascript" src="assets/js/cardswap.js"></script>
   </head>
 
   <body>
@@ -95,31 +95,8 @@
     ></audio>
     <!--Main section -->
     <section class="main-content">
-      <div class="row difficulty-text">
-        <div class="col">
-          <h2>Play</h2>
-          <div class="text-center">
-            <a
-              class="btn difficulty-button"
-              id="easyButton"
-              onclick="new cardSwap()"
-              role="button">Easy</a>
-          </div>
-          <div class="text-center">
-            <a class="btn difficulty-button" role="button">Medium</a>
-          </div>
-          <div class="text-center">
-            <a class="btn difficulty-button" role="button">Hard</a>
-          </div>
-          <div class="text-center">
-            <a
-              class="btn music-button"
-              id="music-button"
-              onClick="togglePlay()"
-              role="button"
-              >Music: off</a>
-          </div>
-        </div>
+      <div class="start-overlay overlay visible">
+        Click to Start
       </div>
       <!-- Game -->
       <div class="row gamebox" id="gameBox">
