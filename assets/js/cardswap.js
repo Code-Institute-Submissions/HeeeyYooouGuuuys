@@ -1,3 +1,5 @@
+"use strict";
+
 // checks for load state of DOM //
 
 if(document.readyState === 'loading') {
@@ -10,8 +12,7 @@ if(document.readyState === 'loading') {
 function ready() {
     let cards = Array.from(document.getElementsByClassName("card"));
     let overlay = Array.from(document.getElementsByClassName("overlay"));
-    let game = new cardSwap;
-    
+    let game = new cardSwap;    
     
     overlay.forEach(overlay => {
         overlay.addEventListener('click', () => {
@@ -31,13 +32,14 @@ class cardSwap {
     constructor(totalTime, cards) {
         this.cardArray = cards;
         this.totalTime = totalTime;
-        this.timer = document.getElementById("total-time");
-        this.totalFlips = document.getElementById("totalTurns").innerHTML;
+        this.timer = (document.getElementById("total-time"));
+        this.totalMoves = (document.getElementsByClassName("totalMoves")).item(0);
+        
         
     }
     startGame() {
         this.counter = 0;
-        this.totalFlips = 0;
+        
         this.matchedCards = [];
         this.totalTime = 0;
         this.audioEvents = new AudioEvents();
@@ -47,11 +49,20 @@ class cardSwap {
     cardFlip(card) {
     card.classList.toggle("flipped");
     this.audioEvents.cardFlipAudio();
-    this.counter++;
-    this.counter.innerHTML = this.counter;
+    this.counter += 1;
+    this.totalMoves.innerHTML = "Moves: " + this.counter;
+    // this.counter.innerHTML = this.counter;
+    // this.totalMoves.innerHTML = "Moves: " + counter;
     console.log(this);
     console.log("flipped card");
-    }
+    };
+
+    /*cardFlipCounter(card) {
+        card.onclick = function () {
+            counter += 1;
+            totalMoves.innerHTML = counter;
+        };
+    };*/
 
 
 }
