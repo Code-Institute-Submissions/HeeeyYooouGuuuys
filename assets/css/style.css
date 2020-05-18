@@ -151,6 +151,10 @@ a:not([href]) {
 }
 
 .card-rows-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-items: center;
+    margin: 25px;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
     perspective: 800px;
