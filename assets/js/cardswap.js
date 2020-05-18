@@ -81,6 +81,7 @@ class AudioEvents {
         this.cardNoMatchAudio = new Audio("assets/audio/incorrect.wav")
         this.BGM = new Audio("assets/audio/Chiptronical.ogg")
         this.BGM.volume  = 0.3;
+        this.BGM.loop = true;
     }
     gameOver() {
         this.musicFade();
