@@ -76,12 +76,12 @@ class cardSwap {
 
 class AudioEvents {
     constructor() {
-        this.gameOverAudio = new Audio("../../assets/audio/fail.wav");
-        this.gameSuccessAudio = new Audio("../../assets/audio/success.wav");
-        this.flipAudio = new Audio("../../assets/audio/card-flip.wav");
-        this.cardMatchAudio = new Audio("../../assets/audio/coin.wav");
-        this.cardNoMatchAudio = new Audio("../../assets/audio/incorrect.wav")
-        this.BGM = new Audio("../../assets/audio/Chiptronical.ogg")
+        this.gameOverAudio = new Audio("assets/audio/fail.wav");
+        this.gameSuccessAudio = new Audio("assets/audio/success.wav");
+        this.flipAudio = new Audio("assets/audio/card-flip.wav");
+        this.cardMatchAudio = new Audio("assets/audio/coin.wav");
+        this.cardNoMatchAudio = new Audio("assets/audio/incorrect.wav")
+        this.BGM = new Audio("assets/audio/Chiptronical.ogg")
         this.BGM.volume  = 0.3;
     }
     gameOver() {
