@@ -139,7 +139,9 @@ a:not([href]) {
 /* Game */
 
 .gamebox {
- display: block;    
+ display: block;
+ max-width: 98vw;   
+ margin: auto; 
 }
 
 .game-info-container {
@@ -154,6 +156,7 @@ a:not([href]) {
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-items: center;
+    justify-content: center;
     margin: 25px;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
@@ -280,7 +283,7 @@ footer a:hover {
 
 /* media queries */
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 662px) {
   .card {
     height: 100px;
     width: 75px;
