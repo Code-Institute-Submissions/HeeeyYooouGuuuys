@@ -39,7 +39,6 @@ class cardSwap {
     }
     startGame() {
         this.counter = 0;
-        
         this.matchedCards = [];
         this.totalTime = 0;
         this.audioEvents = new AudioEvents();
