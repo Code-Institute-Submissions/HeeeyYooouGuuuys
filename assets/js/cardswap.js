@@ -57,11 +57,11 @@ class cardSwap {
     shuffleCards() {
         
         for(let i = this.cards.length - 1; i > 0; i--) {
-            let randIndex = Math.floor(Math.random() * (i+1));
+            let randIndex = Math.floor(Math.random() * 16);
             this.cards[randIndex].style.order = i;
             this.cards[i].style.order = randIndex;
         }
-        console.log(this);
+        console.log("cards shuffled");
     }
 
     /*cardFlipCounter(card) {
