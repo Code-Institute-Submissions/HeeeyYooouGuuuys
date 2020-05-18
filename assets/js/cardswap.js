@@ -31,18 +31,19 @@ function ready() {
 class cardSwap {
     constructor(totalTime, cards) {
         this.cards = Array.from(document.getElementsByClassName("card"));
-        this.totalTime = totalTime;
-        this.timer = (document.getElementById("total-time"));
+        // this.totalTime = totalTime;
+        this.totalTime = (document.getElementsByClassName("totalTime")).item(0);
         this.totalMoves = (document.getElementsByClassName("totalMoves")).item(0);    
         
     }
     startGame() {
         this.counter = 0;
         this.matchedCards = [];
-        this.totalTime = 0;
+        this.timer = 0;
         this.audioEvents = new AudioEvents();
         this.audioEvents.musicStart();
         this.shuffleCards();
+        this.startTimer();
 
     }
 
@@ -54,14 +55,20 @@ class cardSwap {
         
     }
 
-    shuffleCards() {
-        
+    shuffleCards() {   
         for(let i = this.cards.length - 1; i > 0; i--) {
             let randIndex = Math.floor(Math.random() * 16);
             this.cards[randIndex].style.order = i;
             this.cards[i].style.order = randIndex;
         }
         console.log("cards shuffled");
+    }
+
+    startTimer() {
+        return setInterval(() => {
+            this.timer += 1;
+            this.totalTime.innerHTML = "Time: " + this.timer;
+        }, 1000);
     }
 
     /*cardFlipCounter(card) {
