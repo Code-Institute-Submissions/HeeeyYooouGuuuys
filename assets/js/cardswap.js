@@ -12,7 +12,7 @@ if(document.readyState === 'loading') {
 function ready() {
     let cards = Array.from(document.getElementsByClassName("card"));
     let overlay = Array.from(document.getElementsByClassName("overlay"));
-    let game = new cardSwap;    
+    let game = new cardSwap;  
     
     overlay.forEach(overlay => {
         overlay.addEventListener('click', () => {
@@ -30,11 +30,10 @@ function ready() {
 
 class cardSwap {
     constructor(totalTime, cards) {
-        this.cardArray = cards;
+        this.cards = Array.from(document.getElementsByClassName("card"));
         this.totalTime = totalTime;
         this.timer = (document.getElementById("total-time"));
-        this.totalMoves = (document.getElementsByClassName("totalMoves")).item(0);
-        
+        this.totalMoves = (document.getElementsByClassName("totalMoves")).item(0);    
         
     }
     startGame() {
@@ -43,18 +42,27 @@ class cardSwap {
         this.totalTime = 0;
         this.audioEvents = new AudioEvents();
         this.audioEvents.musicStart();
-        console.log("started game");
+        this.shuffleCards();
+
     }
+
     cardFlip(card) {
-    card.classList.toggle("flipped");
-    this.audioEvents.cardFlipAudio();
-    this.counter += 1;
-    this.totalMoves.innerHTML = "Moves: " + this.counter;
-    // this.counter.innerHTML = this.counter;
-    // this.totalMoves.innerHTML = "Moves: " + counter;
-    console.log(this);
-    console.log("flipped card");
-    };
+        card.classList.toggle("flipped");
+        this.audioEvents.cardFlipAudio();
+        this.counter += 1;
+        this.totalMoves.innerHTML = "Moves: " + this.counter;
+        
+    }
+
+    shuffleCards() {
+        
+        for(let i = this.cards.length - 1; i > 0; i--) {
+            let randIndex = Math.floor(Math.random() * (i+1));
+            this.cards[randIndex].style.order = i;
+            this.cards[i].style.order = randIndex;
+        }
+        console.log(this);
+    }
 
     /*cardFlipCounter(card) {
         card.onclick = function () {
