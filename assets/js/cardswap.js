@@ -52,7 +52,6 @@ class cardSwap {
         this.audioEvents.cardFlipAudio();
         this.counter += 1;
         this.totalMoves.innerHTML = "Moves: " + this.counter;
-        
     }
 
     shuffleCards() {   
@@ -70,14 +69,6 @@ class cardSwap {
             this.totalTime.innerHTML = "Time: " + this.timer;
         }, 1000);
     }
-
-    /*cardFlipCounter(card) {
-        card.onclick = function () {
-            counter += 1;
-            totalMoves.innerHTML = counter;
-        };
-    };*/
-
 
 }
 
