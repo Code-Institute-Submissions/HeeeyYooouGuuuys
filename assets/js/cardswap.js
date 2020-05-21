@@ -1,13 +1,7 @@
 "use strict";
 
-// checks for load state of DOM //
-
-if(document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', ready);
-} else {
-    ready();
-    console.log("ready");
-}
+let hasFlippedCard = false;
+let firstCard, secondCard;
 
 function ready() {
     let cards = Array.from(document.getElementsByClassName("card"));
@@ -23,52 +17,76 @@ function ready() {
     cards.forEach(card => {
         card.addEventListener('click', () => {
             game.cardFlip(card);
+            // game.hasFlippedCard(card);
         });
     });
-}
+};
 
 
 class cardSwap {
     constructor(totalTime, cards) {
         this.cards = Array.from(document.getElementsByClassName("card"));
-        // this.totalTime = totalTime;
         this.totalTime = (document.getElementsByClassName("totalTime")).item(0);
-        this.totalMoves = (document.getElementsByClassName("totalMoves")).item(0);    
-        
+        this.totalMoves = (document.getElementsByClassName("totalMoves")).item(0);   
+        // this.hasFlippedCard = false;
     }
     startGame() {
+        // this.hasFlippedCard = false;
         this.counter = 0;
         this.matchedCards = [];
         this.timer = 0;
         this.audioEvents = new AudioEvents();
         this.audioEvents.musicStart();
-        this.shuffleCards();
+        // this.shuffleCards();
         this.startTimer();
 
     }
-
-    cardFlip(card) {
-        card.classList.toggle("flipped");
-        this.audioEvents.cardFlipAudio();
-        this.counter += 1;
-        this.totalMoves.innerHTML = "Moves: " + this.counter;
-    }
-
-    shuffleCards() {   
-        for(let i = this.cards.length - 1; i > 0; i--) {
-            let randIndex = Math.floor(Math.random() * 16);
-            this.cards[randIndex].style.order = i;
-            this.cards[i].style.order = randIndex;
-        }
-        console.log("cards shuffled");
-    }
-
-    startTimer() {
+        startTimer() {
         return setInterval(() => {
             this.timer += 1;
             this.totalTime.innerHTML = "Time: " + this.timer;
         }, 1000);
     }
+
+    //     // shuffleCards() {   
+    //     // for(let i = this.cards.length - 1; i > 0; i--) {
+    //     //     let randIndex = Math.floor(Math.random() * 16);
+    //     //     this.cards[randIndex].style.order = i;
+    //     //     this.cards[i].style.order = randIndex;
+    //     // }
+
+    // }
+
+        cardFlip(card) {
+        card.classList.add("flipped");
+        this.audioEvents.cardFlipAudio();
+        this.counter += 1;
+        this.totalMoves.innerHTML = "Moves: " + this.counter;
+        
+        if(!card.hasFlippedCard) {
+            card.hasFlippedCard = true;
+            firstCard = event.currentTarget;
+        } else {
+            card.hasFlippedCard = false;
+            secondCard = event.currentTarget;
+
+            console.log({firstCard, secondCard});
+            console.log(firstCard.dataset.framework);
+
+            if (firstCard.dataset.framework === secondCard.dataset.framework) {
+                firstCard.removeEventListener("click");
+                secondCard.removeEventListener("click");
+            } else {
+                setTimeout(() => {
+                firstCard.classList.remove("flipped");
+                secondCard.classList.remove("flipped");
+            }, 1500);
+        }
+        }
+        
+        
+    }
+        // this.cardMatch();
 
 }
 
@@ -80,7 +98,7 @@ class AudioEvents {
         this.cardMatchAudio = new Audio("assets/audio/coin.wav");
         this.cardNoMatchAudio = new Audio("assets/audio/incorrect.wav")
         this.BGM = new Audio("assets/audio/Chiptronical.ogg")
-        this.BGM.volume  = 0.3;
+        this.BGM.volume  = 0.05;
         this.BGM.loop = true;
     }
     gameOver() {
@@ -112,6 +130,14 @@ class AudioEvents {
     }
 }
 
+// checks for load state of DOM //
+
+if(document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ready);
+} else {
+    ready();
+    console.log("ready");
+}
 //BGM//
 
 /*let bgm = document.getElementById("bgm");
