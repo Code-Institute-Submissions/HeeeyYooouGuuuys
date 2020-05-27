@@ -109,7 +109,7 @@ class cardSwap {
             return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
         gameOver() {
-            this.audioEvents.musicFade();
+            this.audioEvents.musicPause();
             this.audioEvents.gameSuccess();
             document.getElementsByClassName("game-over-overlay")[0].classList.add("visible");
             console.log(this);
