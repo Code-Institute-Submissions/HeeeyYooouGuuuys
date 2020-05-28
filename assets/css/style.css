@@ -206,6 +206,7 @@ a:not([href]) {
     -ms-backface-visibility:hidden;
     -o-backface-visibility:hidden;
     backface-visibility:hidden;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
         
 }
