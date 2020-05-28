@@ -145,7 +145,7 @@ a:not([href]) {
 
 .gamebox {
  display: block;
- max-width: 98vw;   
+ width: 98vw;   
  margin: auto; 
 }
 
@@ -199,8 +199,8 @@ a:not([href]) {
 .card-back,
 .card-front {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 99.9%;
+    height: 99.9%;
     -webkit-backface-visibility:hidden;
     -moz-backface-visibility:hidden;
     -ms-backface-visibility:hidden;
