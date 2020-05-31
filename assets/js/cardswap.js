@@ -5,6 +5,7 @@ function ready() {
     let game = new cardSwap;
     
     
+    
     overlay.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
@@ -24,7 +25,9 @@ class cardSwap {
     constructor() {
         this.cards = Array.from(document.getElementsByClassName("card"));
         this.totalTime = (document.getElementsByClassName("totalTime")).item(0);
-        this.totalMoves = (document.getElementsByClassName("totalMoves")).item(0);   
+        this.totalMoves = (document.getElementsByClassName("totalMoves")).item(0);  
+        this.endFlips = document.getElementById("end-flips"); 
+        this.endTime = document.getElementById("end-time");
         
     }
     startGame() {
@@ -122,6 +125,8 @@ class cardSwap {
             this.stopTimer();
             this.audioEvents.gameSuccess();
             document.getElementsByClassName("game-over-overlay")[0].classList.add("visible");
+            this.endFlips.innerHTML = this.counter;
+            this.endTime.innerHTML = this.timer;
         }
 
 }
