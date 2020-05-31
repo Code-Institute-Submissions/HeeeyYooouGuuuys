@@ -34,17 +34,16 @@ class cardSwap {
         this.counter = 0;
         this.matchedCards = [];
         this.timer = 0;
-        this.timer = null;
+        this.totalTime.innerHTML = "Time: " + this.timer;
         this.audioEvents = new AudioEvents();
         this.audioEvents.musicStart();
-        this.startTimer();
         // this.shuffleCards();
         this.busy = false;
         this.cardToCheck = null;
         this.resetCards();
-        // setTimeout(() => {
-        //     this.startTimer();
-        // }, 1000);
+        setTimeout(() => {
+            this.startTimer();
+        }, 200);
     }
 
     resetCards() {
@@ -53,9 +52,7 @@ class cardSwap {
     }
 }
 
-        startTimer() {  
-        //     for (var i = 0; i < 99999; i++)
-        // window.clearInterval(i);       
+        startTimer() {        
         setInterval(() => {
             this.timer ++;
             this.totalTime.innerHTML = "Time: " + this.timer;
