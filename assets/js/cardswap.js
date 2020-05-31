@@ -2,12 +2,14 @@
 function ready() {
     let cards = Array.from(document.getElementsByClassName("card"));
     let overlay = Array.from(document.getElementsByClassName("overlay"));
-    let game = new cardSwap;  
+    let game = new cardSwap;
+    
     
     overlay.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
             game.startGame();
+            // game.resetTimer();
         });
     });
     cards.forEach(card => {
@@ -19,39 +21,47 @@ function ready() {
 
 
 class cardSwap {
-    constructor(totalTime, cards) {
+    constructor() {
         this.cards = Array.from(document.getElementsByClassName("card"));
         this.totalTime = (document.getElementsByClassName("totalTime")).item(0);
         this.totalMoves = (document.getElementsByClassName("totalMoves")).item(0);   
+        
     }
     startGame() {
         this.counter = 0;
         this.matchedCards = [];
         this.timer = 0;
+        this.timer = null;
         this.audioEvents = new AudioEvents();
         this.audioEvents.musicStart();
-        // this.shuffleCards();
         this.startTimer();
+        // this.shuffleCards();
         this.busy = false;
         this.cardToCheck = null;
-        console.log(this);
         this.resetCards();
-
+        // setTimeout(() => {
+        //     this.startTimer();
+        // }, 1000);
     }
 
     resetCards() {
      for (var i = 0; i < this.cards.length; i++) {
    this.cards[i].classList.remove('flipped');
+    }
 }
 
-    }
-
-        startTimer() {
-        return setInterval(() => {
-            this.timer += 1;
+        startTimer() {  
+        //     for (var i = 0; i < 99999; i++)
+        // window.clearInterval(i);       
+        setInterval(() => {
+            this.timer ++;
             this.totalTime.innerHTML = "Time: " + this.timer;
         }, 1000);
     }
+        stopTimer() {
+            for (var i = 0; i < 99999; i++)
+        window.clearInterval(i);
+        }
 
     //     shuffleCards() {   
     //     for(let i = this.cards.length - 1; i > 0; i--) {
@@ -109,11 +119,9 @@ class cardSwap {
             return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
         gameOver() {
-            this.audioEvents.musicPause();
+            this.stopTimer();
             this.audioEvents.gameSuccess();
             document.getElementsByClassName("game-over-overlay")[0].classList.add("visible");
-            console.log(this);
-            console.log("gameover");
         }
 
 }
@@ -134,7 +142,7 @@ class AudioEvents {
         this.gameOverAudio.play();
     }
     gameSuccess() {
-        this.musicFade();
+        this.musicPause();
         this.gameSuccessAudio.play();
     }     
     cardFlipAudio() {
