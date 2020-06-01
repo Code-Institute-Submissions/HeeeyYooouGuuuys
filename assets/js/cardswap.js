@@ -20,7 +20,7 @@ function ready() {
 
     document.getElementById("reset-button").addEventListener("click", event => {
         game.stopTimer();
-        game.startGame();
+        game.resetGame();
 });
     document.getElementById("music-button-game").addEventListener("click", event => {
         game.audioEvents.muteAllAudio();
@@ -134,12 +134,22 @@ class cardSwap {
             this.endFlips.innerHTML = this.counter;
             this.endTime.innerHTML = this.timer;
         }
-        resetButton() {
-            document.getElementById("reset-button").addEventListener("click", function(){
-  this.startGame();
-});
-
-        }
+        resetGame() {
+            this.counter = 0;
+        this.totalMoves.innerHTML = "Moves: " + this.counter;
+        this.matchedCards = [];
+        this.timer = 0;
+        this.totalTime.innerHTML = "Time: " + this.timer;
+        this.audioEvents = new AudioEvents();
+        // this.shuffleCards();
+        this.busy = false;
+        this.cardToCheck = null;
+        this.resetCards();
+        setTimeout(() => {
+            this.startTimer();
+        }, 200);
+    }
+        
 
 
 
@@ -162,6 +172,7 @@ class AudioEvents {
     }
     gameSuccess() {
         this.musicPause();
+        this.BGM.currentTime = 0;
         this.gameSuccessAudio.play();
     }     
     cardFlipAudio() {
@@ -174,6 +185,7 @@ class AudioEvents {
         this.cardNoMatchAudio.play()
     }
     musicStart() {
+        this.BGM.currentTime = 0;
         this.BGM.play()
     }
     // musicFade() {
