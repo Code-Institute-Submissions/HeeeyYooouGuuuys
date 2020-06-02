@@ -118,6 +118,14 @@ body p {
     color: black;
 }
 
+.game-button {
+    margin: 15px 0 30px 0;
+    background-color: yellow;
+    border: 3px solid pink;
+    border-radius: 0px;
+    color: black;
+}
+
 .overlay-button {
         margin: 15px 0 30px 0;
     background-color: yellow;
