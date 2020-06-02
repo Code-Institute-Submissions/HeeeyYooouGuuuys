@@ -8,6 +8,26 @@ function ready() {
     let span = document.getElementsByClassName("close");
     // let isMuted = false;
     // let audioMute = document.getElementById("music-button-game");
+    // let isPlaying = false;
+    // let musicButtonToggleGame = document.getElementById("music-button-game")
+
+//     function togglePlay() {
+//   if (isPlaying) {
+//     audioEvents.BGM.pause()
+//   } else {
+//     audioEvents.BGM.play();
+//   }
+// };
+// audioEvents.BGM.onplaying = function() {
+//   isPlaying = true;
+//   musicButtonToggle.innerHTML = "Music: on";
+//   musicButtonToggleGame.innerHTML = "Music: on";
+// };
+// audioEvents.BGM.onpause = function() {
+//   isPlaying = false;
+//   musicButtonToggle.innerHTML = "Music: off";
+//   musicButtonToggleGame.innerHTML = "Music: off"
+// };
 
     
     overlay.forEach(overlay => {
@@ -54,17 +74,17 @@ window.onclick = function(event) {
 
 
 
-    audioMuteToggle() 
-        let isMuted = false;
-        let btn = document.getElementById('music-button-game');
-        btn.addEventListener('click', event => {
-  if (isMuted) {
-    this.audioEvents.unMuteAllAudio();  
-  } else {
-    this.audioEvents.muteAllAudio();
-  }
-}, false);
-    }
+//     audioMuteToggle() 
+//         // let isMuted = false;
+//         let btn = document.getElementById('music-button-game');
+//         btn.addEventListener('click', event => {
+//   if (isMuted) {
+//     this.audioEvents.unMuteAllAudio();  
+//   } else {
+//     this.audioEvents.muteAllAudio();
+//   }
+// }, false);
+     }
 
 
 
@@ -87,7 +107,7 @@ class cardSwap {
         this.totalTime.innerHTML = "Time: " + this.timer;
         this.audioEvents = new AudioEvents();
         this.audioEvents.musicStart();
-        // this.shuffleCards();
+        this.shuffleCards();
         this.busy = false;
         this.cardToCheck = null;
         this.resetCards();
@@ -113,14 +133,14 @@ class cardSwap {
         window.clearInterval(i);
         }
 
-    //     shuffleCards() {   
-    //     for(let i = this.cards.length - 1; i > 0; i--) {
-    //         let randomIndex = Math.floor(Math.random() * (i+1));
-    //         this.cards[randomIndex].style.order = i;
-    //         this.cards[i].style.order = randomIndex;
-    //     }
+        shuffleCards() {   
+        for(let i = this.cards.length - 1; i > 0; i--) {
+            let randomIndex = Math.floor(Math.random() * (i+1));
+            this.cards[randomIndex].style.order = i;
+            this.cards[i].style.order = randomIndex;
+        }
 
-    // }
+    }
 
         cardFlip(card) {
             if(this.canFlipCard(card)) {
@@ -190,17 +210,17 @@ class cardSwap {
             this.startTimer();
         }, 200);
     }
-    audioMuteToggle() {
-        let isMuted = false;
-        let btn = document.getElementById('music-button-game');
-        btn.addEventListener('click', event => {
-  if (isMuted) {
-    this.audioEvents.unMuteAllAudio();  
-  } else {
-    this.audioEvents.muteAllAudio();
-  }
-}, false);
-    }
+//     audioMuteToggle() {
+//         let isMuted = false;
+        
+//         btn.addEventListener('click', event => {
+//   if (isMuted) {
+//     this.audioEvents.unMuteAllAudio();  
+//   } else {
+//     this.audioEvents.muteAllAudio();
+//   }
+// }, false);
+    // }
 }
         
 
@@ -242,21 +262,17 @@ class AudioEvents {
         this.BGM.currentTime = 0;
         this.BGM.play()
     }
-    // musicFade() {
-    //     this.BGM.fadeOut = true;
-    //     this.BGM.fadeOutDuration = 5;
-    // }
     musicPause() {
         this.BGM.pause();
     }
     muteAllAudio() {
         this.isMuted = true;
         this.gameOverAudio.volume = 0;
-        this.gameSuccessAudio.volume = 0;
+        this.gameSuccessAudio.pause();
         this.flipAudio.volume = 0;
-        this.cardMatchAudio.volume = 0;
+        this.cardMatchAudio.pause();
         this.cardNoMatchAudio.volume = 0;
-        this.BGM.volume = 0;
+        this.BGM.pause()
     }
     unMuteAllAudio() {
         this.isMuted = false;
@@ -303,16 +319,6 @@ bgm.onpause = function() {
 };
 
 
-
-// Game //
-
-// jQuery to hide difficulty-text and gameBox cards when difficulty button clicked//
-/*$('#gameBox').hide();
-$('#start-button').on('click',
-  function() {
-    $('.difficulty-text, #gameBox').toggle();
-  }
-);*/
 
 // flip card on click functionality
 
