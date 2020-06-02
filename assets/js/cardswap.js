@@ -3,6 +3,10 @@ function ready() {
     let cards = Array.from(document.getElementsByClassName("card"));
     let overlay = Array.from(document.getElementsByClassName("overlay"));
     let game = new cardSwap;
+    let modal = document.getElementsByClassName('modal');
+    let modalBtn = document.getElementsByClassName("modalOpen");
+    let span = document.getElementsByClassName("close");
+    // let isMuted = false;
     // let audioMute = document.getElementById("music-button-game");
 
     
@@ -22,10 +26,46 @@ function ready() {
         game.stopTimer();
         game.resetGame();
 });
-    document.getElementById("music-button-game").addEventListener("click", event => {
-        game.audioEvents.muteAllAudio();
-});
+
+// Open modals
+modalBtn[0].onclick = function() {
+    modal[0].style.display = "block";
+}
+modalBtn[1].onclick = function() {
+    modal[1].style.display = "block";
+}
+
+// close modal on x
+span[0].onclick = function() {
+    modal[0].style.display = "none";
+}
+span[1].onclick = function() {
+    modal[1].style.display = "none";
+}
+// click outside modal close
+window.onclick = function(event) {
+    if (event.target == modal[0]) {
+        modal[0].style.display = "none";
+    }
+    if (event.target == modal[1]) {
+        modal[1].style.display = "none";
+    }
 };
+
+
+
+    audioMuteToggle() 
+        let isMuted = false;
+        let btn = document.getElementById('music-button-game');
+        btn.addEventListener('click', event => {
+  if (isMuted) {
+    this.audioEvents.unMuteAllAudio();  
+  } else {
+    this.audioEvents.muteAllAudio();
+  }
+}, false);
+    }
+
 
 
 class cardSwap {
@@ -35,6 +75,7 @@ class cardSwap {
         this.totalMoves = (document.getElementsByClassName("totalMoves")).item(0);  
         this.endFlips = document.getElementById("end-flips"); 
         this.endTime = document.getElementById("end-time");
+        this.isMuted = false;
         
         
     }
@@ -149,11 +190,23 @@ class cardSwap {
             this.startTimer();
         }, 200);
     }
+    audioMuteToggle() {
+        let isMuted = false;
+        let btn = document.getElementById('music-button-game');
+        btn.addEventListener('click', event => {
+  if (isMuted) {
+    this.audioEvents.unMuteAllAudio();  
+  } else {
+    this.audioEvents.muteAllAudio();
+  }
+}, false);
+    }
+}
         
 
 
 
-}
+
 
 class AudioEvents {
     constructor() {
@@ -165,6 +218,7 @@ class AudioEvents {
         this.BGM = new Audio("assets/audio/Chiptronical.ogg")
         this.BGM.volume  = 0.05;
         this.BGM.loop = true;
+        
     }
     gameOver() {
         this.musicPause();
@@ -196,12 +250,22 @@ class AudioEvents {
         this.BGM.pause();
     }
     muteAllAudio() {
+        this.isMuted = true;
         this.gameOverAudio.volume = 0;
         this.gameSuccessAudio.volume = 0;
         this.flipAudio.volume = 0;
         this.cardMatchAudio.volume = 0;
         this.cardNoMatchAudio.volume = 0;
         this.BGM.volume = 0;
+    }
+    unMuteAllAudio() {
+        this.isMuted = false;
+        this.gameOverAudio.volume = 1;
+        this.gameSuccessAudio.volume = 1;
+        this.flipAudio.volume = 1;
+        this.cardMatchAudio.volume = 1;
+        this.cardNoMatchAudio.volume = 1;
+        this.BGM.volume = 1;
     }
 }
 
