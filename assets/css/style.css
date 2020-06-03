@@ -23,7 +23,7 @@ body {
 
 body p {
     font-family: "VT323", sans-serif;
-    font-size: 3.5vw;
+    font-size: 2rem;
     text-shadow: #000000 1px 1px;
 }
 
@@ -94,7 +94,7 @@ body p {
 }
 
 .modal-content p {
-    font-size:3.5vw;
+    font-size:1.3em;
 
 }
 
@@ -138,7 +138,7 @@ body p {
     border: 3px solid pink;
     border-radius: 0px;
     color: black;
-    font-size: 3.5vw;
+    font-size: 4rem;
     font-family: "Press Start 2P", sans-serif;
 }
 
@@ -327,7 +327,7 @@ footer a:hover {
     width: 75px;
     }
   body p {
-    /* font-size: 1.7em; */
+    font-size: 1.4em;
     }
 }
 
