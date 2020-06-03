@@ -235,7 +235,7 @@ class AudioEvents {
         this.flipAudio = new Audio("assets/audio/card-flip.wav");
         this.cardMatchAudio = new Audio("assets/audio/coin.wav");
         this.cardNoMatchAudio = new Audio("assets/audio/incorrect.wav")
-        this.BGM = new Audio("assets/audio/Chiptronical.ogg")
+        this.BGM = new Audio("assets/audio/Chiptronical.mp3")
         this.BGM.volume  = 0.05;
         this.BGM.loop = true;
         
