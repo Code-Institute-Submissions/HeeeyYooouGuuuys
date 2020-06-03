@@ -138,7 +138,8 @@ body p {
     border: 3px solid pink;
     border-radius: 0px;
     color: black;
-    font-size: 4rem;
+    font-size: 2rem;
+    max-width: 90vw;
     font-family: "Press Start 2P", sans-serif;
 }
 
