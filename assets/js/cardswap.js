@@ -48,25 +48,25 @@ window.onload=function() {
         game.stopTimer();
         game.resetGame();
     });
-    };
+    }
 };
 
 // Open modals
 modalBtn[0].onclick = function() {
     modal[0].style.display = "block";
-}
+};
 modalBtn[1].onclick = function() {
     modal[1].style.display = "block";
-}
+};
 
 
 // close modal on x
 span[0].onclick = function() {
     modal[0].style.display = "none";
-}
+};
 span[1].onclick = function() {
     modal[1].style.display = "none";
-}
+};
 // click outside modal close
 window.onclick = function(event) {
     if (event.target == modal[0]) {
@@ -239,8 +239,8 @@ class AudioEvents {
         this.gameSuccessAudio = new Audio("assets/audio/success.wav");
         this.flipAudio = new Audio("assets/audio/card-flip.wav");
         this.cardMatchAudio = new Audio("assets/audio/coin.wav");
-        this.cardNoMatchAudio = new Audio("assets/audio/incorrect.wav")
-        this.BGM = new Audio("assets/audio/Chiptronical.mp3")
+        this.cardNoMatchAudio = new Audio("assets/audio/incorrect.wav");
+        this.BGM = new Audio("assets/audio/Chiptronical.mp3");
         this.BGM.volume  = 0.05;
         this.BGM.loop = true;
         
@@ -258,14 +258,14 @@ class AudioEvents {
         this.flipAudio.play();
     }
     cardMatch() {
-        this.cardMatchAudio.play()
+        this.cardMatchAudio.play();
     }
     cardNomatch() {
-        this.cardNoMatchAudio.play()
+        this.cardNoMatchAudio.play();
     }
     musicStart() {
         this.BGM.currentTime = 0;
-        this.BGM.play()
+        this.BGM.play();
     }
     musicPause() {
         this.BGM.pause();
@@ -277,7 +277,7 @@ class AudioEvents {
         this.flipAudio.volume = 0;
         this.cardMatchAudio.pause();
         this.cardNoMatchAudio.volume = 0;
-        this.BGM.pause()
+        this.BGM.pause();
     }
     unMuteAllAudio() {
         this.isMuted = false;
