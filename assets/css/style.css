@@ -307,6 +307,16 @@ a:not([href]) {
     display: flex;
 }
 
+.game-over-star-container {
+    height:70vh;
+    width: 70vh;
+    background-image: url("../../assets/img/pixelaesthetics.gif");
+    background-repeat: repeat;
+    text-align: center;
+    border-radius: 1px;
+    border: 1px solid rgb(0, 255, 102); 
+}
+
 /* Footer */
 
 footer{
