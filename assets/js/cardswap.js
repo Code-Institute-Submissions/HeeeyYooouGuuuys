@@ -6,6 +6,7 @@ function ready() {
     let modal = document.getElementsByClassName('modal');
     let modalBtn = document.getElementsByClassName("modalOpen");
     let span = document.getElementsByClassName("close");
+    var reset = document.getElementById('reset-button');
     // let isMuted = false;
     // let audioMute = document.getElementById("music-button-game");
     // let isPlaying = false;
@@ -41,11 +42,14 @@ function ready() {
             game.cardFlip(card);
         });
     });
-
-    document.getElementById("reset-button").addEventListener("click", event => {
+window.onload=function() {
+    if(reset){
+    reset.addEventListener("click", () => {
         game.stopTimer();
         game.resetGame();
-});
+    });
+    };
+};
 
 // Open modals
 modalBtn[0].onclick = function() {
@@ -54,6 +58,7 @@ modalBtn[0].onclick = function() {
 modalBtn[1].onclick = function() {
     modal[1].style.display = "block";
 }
+
 
 // close modal on x
 span[0].onclick = function() {
@@ -291,6 +296,7 @@ if(document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 } else {
     ready();
+
     console.log("ready");
 }
 //BGM//
