@@ -18,13 +18,14 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    text-shadow: #000000 1.5px 1.5px;
     
 }
 
 body p {
     font-family: "VT323", sans-serif;
     font-size: 2rem;
-    text-shadow: #000000 1px 1px;
+    
 }
 
 .main-content {
@@ -74,6 +75,7 @@ body p {
   border: 3px solid rgb(0, 255, 102);
   width: 80%; 
   overflow-wrap: normal;
+  white-space: normal;
 }
 
 @-webkit-keyframes modal-content {
@@ -93,9 +95,19 @@ body p {
   }
 }
 
+.modal-title {
+    font-size: 0.8em;
+}
+
 .modal-content p {
     font-size:1.3em;
+    overflow-wrap: break-word;
+}
 
+.modal-content a {
+        color:rgb(0, 255, 102);
+    text-decoration: none;
+    background-color: transparent;
 }
 
 /* The Close Button */
@@ -175,10 +187,8 @@ a:not([href]) {
 
 .game-info-container {
     display: flex;
-    /* justify-content: space-between; */
     margin-left: 20vw;
     margin-right: 20vw;
-    /* justify-items: center; */
     justify-content: center;
 
 }
@@ -311,7 +321,6 @@ footer a {
     color: inherit;
      font-family: "VT323", sans-serif;
     font-size: 2rem;
-    text-shadow: #000000 1px 1px;
 }
 
 footer a:hover {
