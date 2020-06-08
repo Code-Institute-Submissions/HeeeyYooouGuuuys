@@ -100,7 +100,8 @@ class cardSwap {
         this.totalMoves = (document.getElementsByClassName("totalMoves")).item(0);  
         this.endFlips = document.getElementById("end-flips"); 
         this.endTime = document.getElementById("end-time");
-        this.isMuted = false;
+        // this.isMuted = false;
+        this.stars = Array.from(document.getElementsByClassName("star-span"));
         
         
     }
@@ -199,6 +200,7 @@ class cardSwap {
             document.getElementsByClassName("game-over-overlay")[0].classList.add("visible");
             this.endFlips.innerHTML = this.counter;
             this.endTime.innerHTML = this.timer;
+            this.starRating();
         }
         resetGame() {
             this.counter = 0;
@@ -215,6 +217,19 @@ class cardSwap {
             this.startTimer();
         }, 200);
     }
+
+    starRating() {
+        if (this.counter > 22 && this.counter < 30){
+                this.stars[1].classList.add("d-none");
+            }
+    else if (this.counter > 30){
+                this.stars[2].classList.add("d-none");
+            }
+        }
+    }
+
+
+    
 //     audioMuteToggle() {
 //         let isMuted = false;
         
@@ -226,7 +241,7 @@ class cardSwap {
 //   }
 // }, false);
     // }
-}
+
         
 
 
