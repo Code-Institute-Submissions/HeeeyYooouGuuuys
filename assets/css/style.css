@@ -311,6 +311,10 @@ a:not([href]) {
   border: 1px solid rgb(0, 255, 102);
 }
 
+.star {
+    display:inline-block;
+}
+
 /* Footer */
 
 footer {
