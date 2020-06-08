@@ -6,7 +6,7 @@ function ready() {
     let modal = document.getElementsByClassName('modal');
     let modalBtn = document.getElementsByClassName("modalOpen");
     let span = document.getElementsByClassName("close");
-    var reset = document.getElementById('reset-button');
+    let reset = document.getElementById('reset-button');
     // let isMuted = false;
     // let audioMute = document.getElementById("music-button-game");
     // let isPlaying = false;
@@ -102,6 +102,7 @@ class cardSwap {
         this.endTime = document.getElementById("end-time");
         // this.isMuted = false;
         this.stars = Array.from(document.getElementsByClassName("star-span"));
+        this.starRatingText = document.getElementById("star-rating-text");
         
         
     }
@@ -221,10 +222,12 @@ class cardSwap {
     starRating() {
         if (this.counter > 22 && this.counter < 30){
                 this.stars[2].classList.add("d-none");
+                this.starRatingText.innerHTML = "this is the two star text";
             }
     else if (this.counter > 30){
                 this.stars[1].classList.add("d-none");
                 this.stars[2].classList.add("d-none");
+                this.starRatingText.innerHTML = "this is the one star text";
             }
         }
     }
