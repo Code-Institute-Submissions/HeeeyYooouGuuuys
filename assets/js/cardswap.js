@@ -113,7 +113,7 @@ class cardSwap {
         this.totalTime.innerHTML = "Time: " + this.timer;
         this.audioEvents = new AudioEvents();
         this.audioEvents.musicStart();
-        this.shuffleCards();
+        // this.shuffleCards();
         this.busy = false;
         this.cardToCheck = null;
         this.resetCards();
@@ -139,14 +139,14 @@ class cardSwap {
         window.clearInterval(i);
         }
 
-        shuffleCards() {   
-        for(let i = this.cards.length - 1; i > 0; i--) {
-            let randomIndex = Math.floor(Math.random() * (i+1));
-            this.cards[randomIndex].style.order = i;
-            this.cards[i].style.order = randomIndex;
-        }
+    //     shuffleCards() {   
+    //     for(let i = this.cards.length - 1; i > 0; i--) {
+    //         let randomIndex = Math.floor(Math.random() * (i+1));
+    //         this.cards[randomIndex].style.order = i;
+    //         this.cards[i].style.order = randomIndex;
+    //     }
 
-    }
+    // }
 
         cardFlip(card) {
             if(this.canFlipCard(card)) {
@@ -209,7 +209,7 @@ class cardSwap {
         this.timer = 0;
         this.totalTime.innerHTML = "Time: " + this.timer;
         this.audioEvents = new AudioEvents();
-        this.shuffleCards();
+        // this.shuffleCards();
         this.busy = false;
         this.cardToCheck = null;
         this.resetCards();
