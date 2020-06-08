@@ -220,9 +220,10 @@ class cardSwap {
 
     starRating() {
         if (this.counter > 22 && this.counter < 30){
-                this.stars[1].classList.add("d-none");
+                this.stars[2].classList.add("d-none");
             }
     else if (this.counter > 30){
+                this.stars[1].classList.add("d-none");
                 this.stars[2].classList.add("d-none");
             }
         }
