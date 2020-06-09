@@ -187,7 +187,9 @@ class cardSwap {
     document.getElementsByClassName("game-over-overlay")[0].classList.add("visible");
     this.endFlips.innerHTML = this.counter;
     this.endTime.innerHTML = this.timer;
+    setTimeout(() => {
     this.starRating();
+    }, 10000);
   }
   resetGame() {
     this.counter = 0;
