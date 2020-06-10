@@ -6,8 +6,6 @@ function ready() {
   let modalBtn = document.getElementsByClassName("modalOpen");
   let span = document.getElementsByClassName("close");
   let reset = document.getElementById("reset-button");
-  //   let mute = document.getElementById("music-button-game");
-  //   let isMuted = true;
   let muteButton = document.getElementById("music-button-game");
   let isMuted = true;
 
@@ -39,18 +37,6 @@ function ready() {
         isMuted = !isMuted;
       });
     }
-    //     mute.addEventListener("click", () => {
-    //    if (game.isMuted === true) {
-    //       game.isMuted = false;
-    //       game.unMuteAllAudio();
-    //       console.log(this);
-    //     }
-    //     else if (game.isMuted === false) {
-    //       game.isMuted = true;
-    //       game.muteAllAudio();
-    //     }
-
-    //   })
   };
 
   // Open modals
@@ -77,17 +63,6 @@ function ready() {
       modal[1].style.display = "none";
     }
   };
-
-  //     audioMuteToggle()
-  //         // let isMuted = false;
-  //         let btn = document.getElementById('music-button-game');
-  //         btn.addEventListener('click', event => {
-  //   if (isMuted) {
-  //     this.audioEvents.unMuteAllAudio();
-  //   } else {
-  //     this.audioEvents.muteAllAudio();
-  //   }
-  // }, false);
 }
 
 class cardSwap {
