@@ -6,12 +6,10 @@ function ready() {
   let modalBtn = document.getElementsByClassName("modalOpen");
   let span = document.getElementsByClassName("close");
   let reset = document.getElementById("reset-button");
-//   let mute = document.getElementById("music-button-game");
-//   let isMuted = true;
-let muteButton = document.getElementById('music-button-game');
-let isMuted = true;
-
-
+  //   let mute = document.getElementById("music-button-game");
+  //   let isMuted = true;
+  let muteButton = document.getElementById("music-button-game");
+  let isMuted = true;
 
   overlay.forEach((overlay) => {
     overlay.addEventListener("click", () => {
@@ -25,37 +23,35 @@ let isMuted = true;
     });
   });
   window.onload = function () {
-    if (reset, muteButton) {
+    if ((reset, muteButton)) {
       reset.addEventListener("click", () => {
         game.stopTimer();
         game.resetGame();
       });
-      muteButton.addEventListener("click", function() {
-if(isMuted) {
-    game.muteAllAudio();
-    muteButton.innerHTML = "Audio: OFF";
-}else {
-    game.unMuteAllAudio();
-    muteButton.innerHTML = "Audio: ON";
-}
-isMuted = !isMuted;
-});
-    };
-//     mute.addEventListener("click", () => {
-//    if (game.isMuted === true) {
-//       game.isMuted = false;
-//       game.unMuteAllAudio();
-//       console.log(this);
-//     }
-//     else if (game.isMuted === false) {
-//       game.isMuted = true;
-//       game.muteAllAudio();
-//     }
+      muteButton.addEventListener("click", function () {
+        if (isMuted) {
+          game.muteAllAudio();
+          muteButton.innerHTML = "Audio: OFF";
+        } else {
+          game.unMuteAllAudio();
+          muteButton.innerHTML = "Audio: ON";
+        }
+        isMuted = !isMuted;
+      });
+    }
+    //     mute.addEventListener("click", () => {
+    //    if (game.isMuted === true) {
+    //       game.isMuted = false;
+    //       game.unMuteAllAudio();
+    //       console.log(this);
+    //     }
+    //     else if (game.isMuted === false) {
+    //       game.isMuted = true;
+    //       game.muteAllAudio();
+    //     }
 
-//   })
-  }
-  
-
+    //   })
+  };
 
   // Open modals
   modalBtn[0].onclick = function () {
@@ -187,16 +183,21 @@ class cardSwap {
   }
   canFlipCard(card) {
     return (
-      !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck);
+      !this.busy &&
+      !this.matchedCards.includes(card) &&
+      card !== this.cardToCheck
+    );
   }
   gameOver() {
     this.stopTimer();
     this.audioEvents.gameSuccess();
-    document.getElementsByClassName("game-over-overlay")[0].classList.add("visible");
+    document
+      .getElementsByClassName("game-over-overlay")[0]
+      .classList.add("visible");
     this.endFlips.innerHTML = this.counter;
     this.endTime.innerHTML = this.timer;
     setTimeout(() => {
-    this.starRating();
+      this.starRating();
     }, 10000);
   }
   resetGame() {
@@ -295,24 +296,24 @@ class AudioEvents {
   musicPause() {
     this.BGM.pause();
   }
-//   muteAllAudio() {
-//     this.isMuted = true;
-//     this.gameOverAudio.volume = 0;
-//     this.gameSuccessAudio.pause();
-//     this.flipAudio.volume = 0;
-//     this.cardMatchAudio.pause();
-//     this.cardNoMatchAudio.volume = 0;
-//     this.BGM.pause();
-//   }
-//   unMuteAllAudio() {
-//     this.isMuted = false;
-//     this.gameOverAudio.volume = 1;
-//     this.gameSuccessAudio.volume = 1;
-//     this.flipAudio.volume = 1;
-//     this.cardMatchAudio.volume = 1;
-//     this.cardNoMatchAudio.volume = 1;
-//     this.BGM.volume = 1;
-//   }
+  //   muteAllAudio() {
+  //     this.isMuted = true;
+  //     this.gameOverAudio.volume = 0;
+  //     this.gameSuccessAudio.pause();
+  //     this.flipAudio.volume = 0;
+  //     this.cardMatchAudio.pause();
+  //     this.cardNoMatchAudio.volume = 0;
+  //     this.BGM.pause();
+  //   }
+  //   unMuteAllAudio() {
+  //     this.isMuted = false;
+  //     this.gameOverAudio.volume = 1;
+  //     this.gameSuccessAudio.volume = 1;
+  //     this.flipAudio.volume = 1;
+  //     this.cardMatchAudio.volume = 1;
+  //     this.cardNoMatchAudio.volume = 1;
+  //     this.BGM.volume = 1;
+  //   }
 }
 
 // checks for load state of DOM //
