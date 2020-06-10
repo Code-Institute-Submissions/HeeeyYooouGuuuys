@@ -180,9 +180,8 @@ class cardSwap {
       .classList.add("visible");
     this.endFlips.innerHTML = this.counter;
     this.endTime.innerHTML = this.timer;
-    setTimeout(() => {
       this.starRating();
-    }, 10000);
+
   }
   resetGame() {
     window.location.reload();
