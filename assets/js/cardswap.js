@@ -41,7 +41,6 @@ function ready() {
           muteButton.innerHTML = "Audio: OFF";
         } else {
           game.unMuteAllAudio();
-          audio.musicStart();
           muteButton.innerHTML = "Audio: ON";
         }
         isMuted = !isMuted;
@@ -241,7 +240,6 @@ class AudioEvents {
     this.cardNoMatchAudio.play();
   }
   musicStart() {
-    this.BGM.currentTime = 0;
     this.BGM.play();
   }
   musicPause() {
