@@ -331,7 +331,6 @@ if (document.readyState === "loading") {
 let isPlaying = false;
 let musicButtonToggle = document.getElementById("music-button")
 let musicButtonToggleGame = document.getElementById("music-button-game")
-
 function togglePlay() {
   if (isPlaying) {
     bgm.pause()
@@ -349,13 +348,8 @@ bgm.onpause = function() {
   musicButtonToggle.innerHTML = "Music: off";
   musicButtonToggleGame.innerHTML = "Music: off"
 };
-
-
-
 // flip card on click functionality
-
 // let card = document.querySelectorAll(".card")
-
 /* function cardFlip() {
     this.classList.toggle("flipped");
     
