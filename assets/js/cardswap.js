@@ -1,7 +1,10 @@
 function ready() {
   let cards = Array.from(document.getElementsByClassName("card"));
-  let overlay = Array.from(document.getElementsByClassName("overlay"));
+//   let overlay = Array.from(document.getElementsByClassName("overlay"));
+  let gameStartOverlay = document.getElementById("game-start-overlay");
+  let gameOverOverlay = document.getElementById("game-over-overlay");
   let game = new cardSwap();
+  let audio = new AudioEvents();
   let modal = document.getElementsByClassName("modal");
   let modalBtn = document.getElementsByClassName("modalOpen");
   let span = document.getElementsByClassName("close");
@@ -9,12 +12,12 @@ function ready() {
   let muteButton = document.getElementById("music-button-game");
   let isMuted = true;
 
-  overlay.forEach((overlay) => {
-    overlay.addEventListener("click", () => {
-      overlay.classList.remove("visible");
-      game.startGame();
-    });
-  });
+//   overlay.forEach((overlay) => {
+//     overlay.addEventListener("click", () => {
+//       overlay.classList.remove("visible");
+//       game.startGame();
+//     });
+//   });
   cards.forEach((card) => {
     card.addEventListener("click", () => {
       game.cardFlip(card);
@@ -26,12 +29,26 @@ function ready() {
         game.stopTimer();
         game.resetGame();
       });
+      if ((gameStartOverlay)) {
+      gameStartOverlay.addEventListener("click", function () {
+          gameStartOverlay.classList.remove("visible");
+       game.startGame();
+      });
+      if ((gameOverOverlay)) {
+      gameOverOverlay.addEventListener("click", function () {
+          gameOverOverlay.classList.remove("visible");
+       game.resetGame();
+      });
+    }
+    }
       muteButton.addEventListener("click", function () {
         if (isMuted) {
           game.muteAllAudio();
+          audio.musicPause();
           muteButton.innerHTML = "Audio: OFF";
         } else {
           game.unMuteAllAudio();
+          audio.musicStart();
           muteButton.innerHTML = "Audio: ON";
         }
         isMuted = !isMuted;
@@ -176,19 +193,20 @@ class cardSwap {
     }, 10000);
   }
   resetGame() {
-    this.counter = 0;
-    this.totalMoves.innerHTML = "Moves: " + this.counter;
-    this.matchedCards = [];
-    this.timer = 0;
-    this.totalTime.innerHTML = "Time: " + this.timer;
+      window.location.reload();
+    // this.counter = 0;
+    // this.totalMoves.innerHTML = "Moves: " + this.counter;
+    // this.matchedCards = [];
+    // this.timer = 0;
+    // this.totalTime.innerHTML = "Time: " + this.timer;
     // this.audioEvents = new AudioEvents();
-    // this.shuffleCards();
-    this.busy = false;
-    this.cardToCheck = null;
-    this.resetCards();
-    setTimeout(() => {
-      this.startTimer();
-    }, 200);
+    // // this.shuffleCards();
+    // this.busy = false;
+    // this.cardToCheck = null;
+    // this.resetCards();
+    // setTimeout(() => {
+    //   this.startTimer();
+    // }, 200);
   }
 
   starRating() {
@@ -212,7 +230,6 @@ class cardSwap {
     // this.audioToggle.innerHTML = "Audio: off";
   }
   unMuteAllAudio() {
-    // this.isMuted = false;
     this.audioEvents.gameOverAudio.volume = 1;
     this.audioEvents.gameSuccessAudio.volume = 1;
     this.audioEvents.flipAudio.volume = 1;
@@ -243,7 +260,7 @@ class AudioEvents {
     this.cardMatchAudio = new Audio("assets/audio/coin.wav");
     this.cardNoMatchAudio = new Audio("assets/audio/incorrect.wav");
     this.BGM = new Audio("assets/audio/Chiptronical.mp3");
-    this.BGM.volume = 0.05;
+    this.BGM.volume = .05;
     this.BGM.loop = true;
   }
   gameOver() {
@@ -271,13 +288,34 @@ class AudioEvents {
   musicPause() {
     this.BGM.pause();
   }
+  muteAllAudio() {
+    // this.isMuted = true;
+    this.audioEvents.gameOverAudio.volume = 0;
+    this.audioEvents.gameSuccessAudio.volume = 0;
+    this.audioEvents.flipAudio.volume = 0;
+    this.audioEvents.cardMatchAudio.volume = 0;
+    this.audioEvents.cardNoMatchAudio.volume = 0;
+    this.audioEvents.BGM.volume = 0;
+    // this.audioToggle.innerHTML = "Audio: off";
+  }
+  unMuteAllAudio() {
+    // this.isMuted = false;
+    this.audioEvents.BGM.start();
+    this.audioEvents.gameOverAudio.volume = 1;
+    this.audioEvents.gameSuccessAudio.volume = 1;
+    this.audioEvents.flipAudio.volume = 1;
+    this.audioEvents.cardMatchAudio.volume = 1;
+    this.audioEvents.cardNoMatchAudio.volume = 1;
+    this.audioEvents.BGM.volume = 1;
+    // this.audioToggle.innerHTML = "Audio: on";
+  }
   //   muteAllAudio() {
   //     this.isMuted = true;
-  //     this.gameOverAudio.volume = 0;
+  //     this.gameOverAudio.pause();
   //     this.gameSuccessAudio.pause();
-  //     this.flipAudio.volume = 0;
+  //     this.flipAudio.pause();
   //     this.cardMatchAudio.pause();
-  //     this.cardNoMatchAudio.volume = 0;
+  //     this.cardNoMatchAudio.pause();
   //     this.BGM.pause();
   //   }
   //   unMuteAllAudio() {
