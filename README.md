@@ -1,8 +1,8 @@
 <h1 align="center">Code Institute Website</h1>
 
-[View the live project here.](https://codeinstitute.net)
+[View the live project here.](https://pengols.github.io/Card-Swap/index.html)
 
-This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
+This is the website for my second Code Institute project focussing primarily on JavaScript.  The site is designed to be responsive and contains an interactive card matching game created using JavaScript. It is styled with a retro 80's feel.
 
 <h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
 
@@ -12,28 +12,28 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
     -   #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
+        1. As a First Time Visitor, I want to test my memory .
+        2. As a First Time Visitor, I want to be able to reminisce about the 80's.
         3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their followings on social media to determine how trusted and known they are.
 
     -   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to find information about coding challenges.
-        2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-        3. As a Returning Visitor, I want to find community links.
+        1. As a Returning Visitor, I want to see if I can better my previous score.
+        2. As a Returning Visitor, I want to show my kids to let them have a feel for the decade i grew up.
+        3. As a Returning Visitor, I want to find social links to the creator.
 
     -   #### Frequent User Goals
-        1. As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
-        2. As a Frequent User, I want to check to see if there are any new blog posts.
+        1. As a Frequent User, I want to check to see if there are any newly added difficulty levels.
+        2. As a Frequent User, I want to check to see if there are any new images, music or graphics.
         3. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
 
 -   ### Design
     -   #### Colour Scheme
-        -   The two main colours used are Code Insititue red, and white.
+        -   A number of 80's style colors are used to evoke a nostalgic feeling. Primarily the site uses a neon pink and purple pallette #000000 & #000000. There are accents of green for which the colour mimics old green screen monitors from the decade #000000 and yellow that matches the collectable coins of a famous video game plumber #000000
     -   #### Typography
-        -   The Montserrat font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
+        -   There are two primary fonts for the website - Press P2 Start & VT232. Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Both Press P2 Start and VT232 are evocative of the fonts used in video games throughout the decade.  I have used Press P2 Start for buttons and titles and VT232 for larger pieces of text as it is easier to parse.
     -   #### Imagery
-        -   Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
+        -   The background image is designed to be evocative of vector designs from the era. It has a nostlgic aesthetic and uses neon pink and purple from which the site takes design cues. The card images are chosen to let people reminisce about pop culture frm the decade.
 
 *   ### Wireframes
 

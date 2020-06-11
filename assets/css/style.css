@@ -327,16 +327,10 @@ a:not([href]) {
              animated-cursor 600ms steps(29,end) infinite;
 }
 
-/* text animation */
-
 @keyframes animated-text{
   from{width: 0;}
   to{width: 500px;}
 }
-
-/* cursor animations */
-
-
 
 .star {
     display:inline-block;
