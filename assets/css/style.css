@@ -316,6 +316,28 @@ a:not([href]) {
     margin-top: 15px;
 }
 
+#star-rating-text {
+    color: rgb(0, 255, 102);
+  white-space: nowrap;
+  overflow: hidden; 
+  margin: 0 auto;
+    font-size: 2.5em;
+    margin-top: 15px;
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 500px;}
+}
+
+/* cursor animations */
+
+
+
 .star {
     display:inline-block;
     height: 5em;
