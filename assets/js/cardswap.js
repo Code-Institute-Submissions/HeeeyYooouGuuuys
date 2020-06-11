@@ -190,11 +190,11 @@ class cardSwap {
   starRating() {
     if (this.counter > 22 && this.counter < 30) {
       this.stars[2].classList.add("d-none");
-      this.starRatingText.innerHTML = "this is the two star text";
+      this.starRatingText.innerHTML = "GNARLY, BUT YOU CAN DO EET!";
     } else if (this.counter > 30) {
       this.stars[1].classList.add("d-none");
       this.stars[2].classList.add("d-none");
-      this.starRatingText.innerHTML = "this is the one star text";
+      this.starRatingText.innerHTML = "WHAT A DRAG! YOU'LL BE BACK?";
     }
   }
   muteAllAudio() {
