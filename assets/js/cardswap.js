@@ -38,10 +38,10 @@ function ready() {
         if (isMuted) {
           game.muteAllAudio();
           audio.musicPause();
-          muteButton.innerHTML = "Audio: OFF";
+          muteButton.innerHTML = "AUDIO: OFF";
         } else {
           game.unMuteAllAudio();
-          muteButton.innerHTML = "Audio: ON";
+          muteButton.innerHTML = "AUDIO: ON";
         }
         isMuted = !isMuted;
       });
@@ -87,10 +87,10 @@ class cardSwap {
   }
   startGame() {
     this.counter = 0;
-    this.totalMoves.innerHTML = "Moves: " + this.counter;
+    this.totalMoves.innerHTML = "MOVES: " + this.counter;
     this.matchedCards = [];
     this.timer = 0;
-    this.totalTime.innerHTML = "Time: " + this.timer;
+    this.totalTime.innerHTML = "TIME: " + this.timer;
     this.audioEvents = new AudioEvents();
     this.audioEvents.musicStart();
     // this.shuffleCards();
@@ -111,7 +111,7 @@ class cardSwap {
   startTimer() {
     setInterval(() => {
       this.timer++;
-      this.totalTime.innerHTML = "Time: " + this.timer;
+      this.totalTime.innerHTML = "TIME: " + this.timer;
     }, 1000);
   }
 
@@ -133,7 +133,7 @@ class cardSwap {
       card.classList.add("flipped");
       this.audioEvents.cardFlipAudio();
       this.counter += 1;
-      this.totalMoves.innerHTML = "Moves: " + this.counter;
+      this.totalMoves.innerHTML = "MOVES: " + this.counter;
 
       if (this.cardToCheck) this.checkForCardMatch(card);
       else this.cardToCheck = card;
@@ -244,21 +244,21 @@ class AudioEvents {
   musicPause() {
     this.BGM.pause();
   }
-  muteAllAudio() {
-    this.audioEvents.gameSuccessAudio.volume = 0;
-    this.audioEvents.flipAudio.volume = 0;
-    this.audioEvents.cardMatchAudio.volume = 0;
-    this.audioEvents.cardNoMatchAudio.volume = 0;
-    this.audioEvents.BGM.volume = 0;
-  }
-  unMuteAllAudio() {
-    this.audioEvents.BGM.start();
-    this.audioEvents.gameSuccessAudio.volume = 0.15;
-    this.audioEvents.flipAudio.volume = 1;
-    this.audioEvents.cardMatchAudio.volume = 1;
-    this.audioEvents.cardNoMatchAudio.volume = 1;
-    this.audioEvents.BGM.volume = 0.15;
-  }
+//   muteAllAudio() {
+//     this.audioEvents.gameSuccessAudio.volume = 0;
+//     this.audioEvents.flipAudio.volume = 0;
+//     this.audioEvents.cardMatchAudio.volume = 0;
+//     this.audioEvents.cardNoMatchAudio.volume = 0;
+//     this.audioEvents.BGM.volume = 0;
+//   }
+//   unMuteAllAudio() {
+//     this.audioEvents.BGM.start();
+//     this.audioEvents.gameSuccessAudio.volume = 0.15;
+//     this.audioEvents.flipAudio.volume = 1;
+//     this.audioEvents.cardMatchAudio.volume = 1;
+//     this.audioEvents.cardNoMatchAudio.volume = 1;
+//     this.audioEvents.BGM.volume = 0.15;
+//   }
 
 }
 
