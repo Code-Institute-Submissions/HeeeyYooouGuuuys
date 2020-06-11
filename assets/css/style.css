@@ -229,6 +229,7 @@ a:not([href]) {
 
 .card-back,
 .card-front {
+    border-radius: 3px;
   position: absolute;
   width: 99.9%;
   height: 99.9%;
