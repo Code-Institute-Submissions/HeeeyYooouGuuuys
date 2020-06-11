@@ -300,7 +300,7 @@ a:not([href]) {
 }
 
 .game-over-star-container {
-    display: grid;
+   padding: 10px;
   min-height: 80%;
     min-width: 70%;
     max-width: 80%;
