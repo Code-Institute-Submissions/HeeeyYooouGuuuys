@@ -37,11 +37,11 @@ This is the website for my second Code Institute project focussing primarily on 
 
 *   ### Wireframes
 
-    -   Home Page Wireframe for Desktop & Mobile - [View](https://github.com/)
+    -   Home Page Wireframe for Desktop & Mobile - [View](https://raw.githubusercontent.com/pengols/Card-Swap/master/mockups/indexhtmlDT&Mob.pdf)
 
-    -   Game page Wireframe for Desktop - [View](https://github.com/)
+    -   Game page Wireframe for Desktop - [View](https://raw.githubusercontent.com/pengols/Card-Swap/master/mockups/Playhtmloverlay&gameDT.pdf)
 
-    -   Game page Wireframe for Mobile - [View](https://github.com/)
+    -   Game page Wireframe for Mobile - [View](https://raw.githubusercontent.com/pengols/Card-Swap/master/mockups/Playhtmloverlay&gamemob.pdf)
 
 ## Features
 
