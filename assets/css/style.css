@@ -161,6 +161,10 @@ body p {
   margin: 15px 0 30px 0;
 }
 
+#reset-button {
+    padding:15px;
+}
+
 a:not([href]) {
   color: #000000;
   text-decoration: none;
@@ -319,7 +323,7 @@ a:not([href]) {
 
 #star-rating-text {
     color: rgb(0, 255, 102);
-  /* white-space: nowrap; */
+  white-space: nowrap;
   overflow: hidden; 
   margin: 0 auto;
     font-size: 2.5em;
@@ -371,6 +375,7 @@ footer a:hover {
   }
   #star-rating-text {
     animation: none;
+    white-space: normal;
 }
 
 }
