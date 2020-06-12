@@ -65,10 +65,10 @@ function ready() {
   };
   // click outside modal close
   window.onclick = function (event) {
-    if (event.target == modal[0]) {
+    if (event.target === modal[0]) {
       modal[0].style.display = "none";
     }
-    if (event.target == modal[1]) {
+    if (event.target === modal[1]) {
       modal[1].style.display = "none";
     }
   };
