@@ -11,11 +11,13 @@ function ready() {
   let muteButton = document.getElementById("music-button-game");
   let isMuted = true;
 
+// click eventlistener added to all cards //
   cards.forEach((card) => {
     card.addEventListener("click", () => {
       game.cardFlip(card);
     });
   });
+// click eventlistener added to overlays and game buttons after page is loaded //
   window.onload = function () {
     if ((reset, muteButton)) {
       reset.addEventListener("click", () => {
@@ -48,7 +50,7 @@ function ready() {
     }
   };
 
-  // Open modals
+  // Open modals on click
   modalBtn[0].onclick = function () {
     modal[0].style.display = "block";
   };
@@ -86,9 +88,9 @@ class CardSwap {
     this.audioToggle = document.getElementById("music-button-game");
   }
   startGame() {
-    this.counter = 0;
+    this.counter = 0; // move counter
     this.totalMoves.innerHTML = "MOVES: " + this.counter;
-    this.matchedCards = [];
+    this.matchedCards = []; // empty array for matched crds to be added to
     this.timer = 0;
     this.totalTime.innerHTML = "TIME: " + this.timer;
     this.audioEvents = new AudioEvents();
@@ -134,7 +136,6 @@ class CardSwap {
       this.audioEvents.cardFlipAudio();
       this.counter += 1;
       this.totalMoves.innerHTML = "MOVES: " + this.counter;
-
       if (this.cardToCheck) this.checkForCardMatch(card);
       else this.cardToCheck = card;
     }
@@ -183,6 +184,7 @@ class CardSwap {
       this.starRating();
 
   }
+  //refreshes page fully on reset or game over overlay click
   resetGame() {
     window.location.reload();
   }
@@ -244,25 +246,9 @@ class AudioEvents {
   musicPause() {
     this.BGM.pause();
   }
-//   muteAllAudio() {
-//     this.audioEvents.gameSuccessAudio.volume = 0;
-//     this.audioEvents.flipAudio.volume = 0;
-//     this.audioEvents.cardMatchAudio.volume = 0;
-//     this.audioEvents.cardNoMatchAudio.volume = 0;
-//     this.audioEvents.BGM.volume = 0;
-//   }
-//   unMuteAllAudio() {
-//     this.audioEvents.BGM.start();
-//     this.audioEvents.gameSuccessAudio.volume = 0.15;
-//     this.audioEvents.flipAudio.volume = 1;
-//     this.audioEvents.cardMatchAudio.volume = 1;
-//     this.audioEvents.cardNoMatchAudio.volume = 1;
-//     this.audioEvents.BGM.volume = 0.15;
-//   }
-
 }
 
-// checks for load state of DOM //
+// checks for load state of DOM and loads ready function if complete//
 
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", ready);
