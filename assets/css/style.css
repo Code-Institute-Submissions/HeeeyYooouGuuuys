@@ -100,11 +100,12 @@ body p {
 }
 
 .modal-title {
-  font-size: 0.8em;
+      font-size: 1.3em;
+    margin-bottom: 15px;
 }
 
 .modal-content p {
-  font-size: 1.3em;
+  font-size: 1.7em;
   overflow-wrap: break-word;
 }
 

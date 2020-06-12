@@ -37,11 +37,11 @@ This is the website for my second Code Institute project focussing primarily on 
 
 *   ### Wireframes
 
-    -   Home Page Wireframe - [View](https://github.com/)
+    -   Home Page Wireframe for Desktop & Mobile - [View](https://github.com/)
 
-    -   Mobile Wireframe - [View](https://github.com/)
+    -   Game page Wireframe for Desktop - [View](https://github.com/)
 
-    -   Contact Us Page Wireframe - [View](https://github.com/)
+    -   Game page Wireframe for Mobile - [View](https://github.com/)
 
 ## Features
 
