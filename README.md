@@ -4,7 +4,7 @@
 
 This is the website for my second Code Institute project focussing primarily on JavaScript.  The site is designed to be responsive and contains an interactive card matching game created using JavaScript. It is styled with a retro 80's feel.
 
-<h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
+<h2 align="center"><img src="https://raw.githubusercontent.com/pengols/Card-Swap/master/assets/img/screens.png"></h2>
 
 ## User Experience (UX)
 
