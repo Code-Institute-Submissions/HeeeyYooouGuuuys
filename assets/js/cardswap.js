@@ -2,7 +2,7 @@ function ready() {
   let cards = Array.from(document.getElementsByClassName("card"));
   let gameStartOverlay = document.getElementById("game-start-overlay");
   let gameOverOverlay = document.getElementById("game-over-overlay");
-  let game = new cardSwap();
+  let game = new CardSwap();
   let audio = new AudioEvents();
   let modal = document.getElementsByClassName("modal");
   let modalBtn = document.getElementsByClassName("modalOpen");
@@ -74,7 +74,7 @@ function ready() {
   };
 }
 
-class cardSwap {
+class CardSwap {
   constructor() {
     this.cards = Array.from(document.getElementsByClassName("card"));
     this.totalTime = document.getElementsByClassName("totalTime").item(0);
