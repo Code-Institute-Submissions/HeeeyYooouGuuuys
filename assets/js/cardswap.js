@@ -95,7 +95,7 @@ class CardSwap {
     this.totalTime.innerHTML = "TIME: " + this.timer;
     this.audioEvents = new AudioEvents();
     this.audioEvents.musicStart();
-    this.shuffleCards();
+    // this.shuffleCards();
     this.busy = false;
     this.cardToCheck = null;
     this.resetCards();
