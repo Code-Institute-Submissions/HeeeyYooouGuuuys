@@ -150,18 +150,18 @@ class CardSwap {
   getCardType(card) {
     return card.getElementsByClassName("card-front")[0].src;
   }
-  cardMatch(card1, card2) {
-    this.matchedCards.push(card1);
-    this.matchedCards.push(card2);
+  cardMatch(firstCard, secondCard) {
+    this.matchedCards.push(firstCard);
+    this.matchedCards.push(secondCard);
     this.audioEvents.cardMatch();
     if (this.matchedCards.length === this.cards.length) this.gameOver();
   }
-  cardMismatch(card1, card2) {
+  cardMismatch(firstCard, secondCard) {
     this.busy = true;
     this.audioEvents.cardNomatch();
     setTimeout(() => {
-      card1.classList.remove("flipped");
-      card2.classList.remove("flipped");
+      firstCard.classList.remove("flipped");
+      secondCard.classList.remove("flipped");
       this.busy = false;
     }, 1000);
   }
