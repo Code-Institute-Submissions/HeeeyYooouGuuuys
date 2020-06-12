@@ -90,7 +90,7 @@ class CardSwap {
   startGame() {
     this.counter = 0; // move counter
     this.totalMoves.innerHTML = "MOVES: " + this.counter;
-    this.matchedCards = []; // empty array for matched crds to be added to
+    this.matchedCards = []; // empty array for matched cards to be added to
     this.timer = 0;
     this.totalTime.innerHTML = "TIME: " + this.timer;
     this.audioEvents = new AudioEvents();
