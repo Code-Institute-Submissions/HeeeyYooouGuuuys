@@ -144,34 +144,37 @@ The Esprima JavaScript Syntax Validator & JSHint were used to validate the JavaS
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
--   A large amount of testing was done to ensure that all pages were linking correctly.
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Mozilla Firefox browsers for desktop.
+-   The website was tested on Google Chrome, Safari, Samsung Internet and Amazon Silk on mobile devices.
+-   The website was viewed on a variety of devices such as Windows Desktop, Windows Laptop, Samsung S8, Samsung S9, Samsung S3 tablet, Motorola G4, Amazon Fire for Kids, iPhone7, iPhone 8.
+-   Frequent tests were undertaken after major changes to ensure cross-browser and cross-device compatibility.
+-   Friends and family members of ages ranging from 3 to 73, were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   Google Lighthouse
 
-### Known Bugs
+### Known Bugs & Resolutions if Applicable
 
--   On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
-    -   A white gap can be seen to the right of the footer and navigation bar as a result.
--   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+-   iOS Safari - does not support .ogg media files.  Resolved by converting any affected audio files to .mp3.
+-   iOS Safari - Apple has blocked the control of HTML5 audio using JavaScript.  Volume can only be controlled through hardware interaction by the user. [Apple Developer documentation](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/Device-SpecificConsiderations/Device-SpecificConsiderations.html). No fix implemented at this point.
+-   iOS Safari - Cards showing a blank front after flip animation.  Card front image was visible during the flip animation. Resolved by adding `background-color: rgba(0, 0, 0, 0.01);` to .card and .card.flipped CSS classes.
+-   Google Chrome - Card flip animation not visible. Resolved by adding `-webkit-transform-style: preserve-3d;` and `-webkit-transform: rotateY(-180deg);` to .card, .card.flipped, and .card-back and .card-front classes.
+-   Internet Explorer 11 - Flexbox and ES6 JavaScript issues.  Modals are not interactive and card grid does not build correctly, instead a column of 16 cards is visible.  These issues remain unresolved.
 
 ## Deployment
 
 ### GitHub Pages
 
-The project was deployed to GitHub Pages using the following steps...
+The project was deployed to GitHub Pages using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/pengols/Card-Swap)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site [link](https://pengols.github.io/Card-Swap/index.html) in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+By forking the GitHub Repository allows a copy of the original repository in GitHub to be created.  The forked repository can be viewed or changes made without affecting the original repository by using the following steps:
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
