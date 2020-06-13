@@ -374,6 +374,10 @@ footer a:hover {
   body p {
     font-size: 1.4em;
   }
+  .game-over-star-container p {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
   #star-rating-text {
     animation: none;
     white-space: normal;
