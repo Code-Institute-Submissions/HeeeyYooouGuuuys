@@ -225,7 +225,7 @@ a:not([href]) {
 }
 
 .card.flipped {
-  /* background-color: rgba(0, 0, 0, 0.01); */
+  background-color: rgba(0, 0, 0, 0.01);
   -webkit-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
