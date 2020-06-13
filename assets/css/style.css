@@ -212,6 +212,7 @@ a:not([href]) {
 }
 
 .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* background-color: rgba(0, 0, 0, 0.01); */
   height: 175px;
   width: 150px;
@@ -224,7 +225,7 @@ a:not([href]) {
 }
 
 .card.flipped {
-  background-color: rgba(0, 0, 0, 0.01);
+  /* background-color: rgba(0, 0, 0, 0.01); */
   -webkit-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
