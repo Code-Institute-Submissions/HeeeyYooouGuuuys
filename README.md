@@ -146,7 +146,7 @@ The Esprima JavaScript Syntax Validator & JSHint were used to validate the JavaS
 
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Mozilla Firefox browsers for desktop.
 -   The website was tested on Google Chrome, Safari, Samsung Internet and Amazon Silk on mobile devices.
--   The website was viewed on a variety of devices such as Windows Desktop, Windows Laptop, Samsung S8, Samsung S9, Samsung S3 tablet, Motorola G4, Amazon Fire for Kids, iPhone7, iPhone 8.
+-   The website was viewed on a variety of devices such as Windows Desktop, Windows Laptop, Samsung S8, Samsung S9, Samsung S3 tablet, Motorola G4, Amazon Fire, iPhone7, iPhone 8.
 -   Frequent tests were undertaken after major code changes to ensure cross-browser and cross-device compatibility.
 -   Friends and family members of ages ranging from 3 to 73, were asked to review the site and documentation to point out any bugs and/or user experience issues.
 -   Google Lighthouse
@@ -157,7 +157,7 @@ The Esprima JavaScript Syntax Validator & JSHint were used to validate the JavaS
 -   iOS Safari - Apple has blocked the control of HTML5 audio using JavaScript.  Volume can only be controlled through hardware interaction by the user. [Apple Developer documentation](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/Device-SpecificConsiderations/Device-SpecificConsiderations.html). No fix implemented at this point.
 -   iOS Safari - Cards showing a blank front after flip animation.  Card front image was visible during the flip animation. Resolved by adding `background-color: rgba(0, 0, 0, 0.01);` to .card and .card.flipped CSS classes.
 -   Google Chrome - Card flip animation not visible. Resolved by adding `-webkit-transform-style: preserve-3d;` and `-webkit-transform: rotateY(-180deg);` to .card, .card.flipped, and .card-back and .card-front classes.
--   Internet Explorer 11 - Flexbox and ES6 JavaScript issues.  Modals are not interactive and card grid does not build correctly, instead a column of 16 cards is visible.  These issues remain unresolved.
+-   Internet Explorer 11 - Flexbox and ES6 JavaScript issues.  Overlays are not interactive and card grid does not build correctly, instead a column of 16 cards is visible.  These issues remain unresolved.
 
 ## Deployment
 
