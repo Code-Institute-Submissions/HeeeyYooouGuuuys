@@ -75,13 +75,13 @@ This is the website for my second Code Institute project focusing primarily on J
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate the HTML and CSS of the project to ensure there were no syntax errors.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
 
 The Esprima JavaScript Syntax Validator & JSHint were used to validate the JavaScript of the project.
 
--   [Esprima JavaScript Syntax Validator](https://esprima.org/demo/validate.html) - [Results](https://github.com/)
--   [JSHint](https://jshint.com/) - [Results](https://github.com/)
+-   [Esprima JavaScript Syntax Validator](https://esprima.org/demo/validate.html) 
+-   [JSHint](https://jshint.com/) 
 
 ### Testing User Stories from User Experience (UX) Section
 
