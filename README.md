@@ -2,7 +2,7 @@
 
 [View the live project here.](https://pengols.github.io/Card-Swap/index.html)
 
-This is the website for my second Code Institute project focussing primarily on JavaScript.  The site is designed to be responsive and contains an interactive card matching game created using JavaScript. It is styled with a retro 80's feel.
+This is the website for my second Code Institute project focusing primarily on JavaScript.  The site is designed to be responsive and contains an interactive card matching game created using JavaScript. It is styled with a retro 80's feel.
 
 <h2 align="center"><img src="https://raw.githubusercontent.com/pengols/Card-Swap/master/assets/img/screens.png"></h2>
 
@@ -31,7 +31,7 @@ This is the website for my second Code Institute project focussing primarily on 
     -   #### Colour Scheme
         -   A number of 80's style colors are used to evoke a nostalgic feeling. Primarily the site uses a neon pink and purple pallette #000000 & #000000. There are accents of green for which the colour mimics old green screen monitors from the decade #000000 and yellow that matches the collectable coins of a famous video game plumber #000000
     -   #### Typography
-        -   There are two primary fonts for the website - Press P2 Start & VT232. Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Both Press P2 Start and VT232 are evocative of the fonts used in video games throughout the decade.  I have used Press P2 Start for buttons and titles and VT232 for larger pieces of text as it is easier to parse.
+        -   There are two primary fonts for the website - Press Start P2 & VT323. Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Both Press Start P2 and VT323 are evocative of the fonts used in video games throughout the decade.  I have used Press Start P2 for buttons and titles and VT323 for larger pieces of text as it is easier to parse.
     -   #### Imagery
         -   The background image is designed to be evocative of vector designs from the era. It has a nostlgic aesthetic and uses neon pink and purple from which the site takes design cues. The card images are chosen to let people reminisce about pop culture frm the decade.
 
@@ -55,14 +55,14 @@ This is the website for my second Code Institute project focussing primarily on 
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [JavaScript](https://www.javascript.com/)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programs Used
 
 1. [Bootstrap 4.5.0:](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Press P2 Start'  and 'VT232' fonts into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Press Start P2'  and 'VT323' fonts into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used for the GitHub logo in page footers.
 1. [jQuery:](https://jquery.com/)
@@ -147,7 +147,7 @@ The Esprima JavaScript Syntax Validator & JSHint were used to validate the JavaS
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Mozilla Firefox browsers for desktop.
 -   The website was tested on Google Chrome, Safari, Samsung Internet and Amazon Silk on mobile devices.
 -   The website was viewed on a variety of devices such as Windows Desktop, Windows Laptop, Samsung S8, Samsung S9, Samsung S3 tablet, Motorola G4, Amazon Fire for Kids, iPhone7, iPhone 8.
--   Frequent tests were undertaken after major changes to ensure cross-browser and cross-device compatibility.
+-   Frequent tests were undertaken after major code changes to ensure cross-browser and cross-device compatibility.
 -   Friends and family members of ages ranging from 3 to 73, were asked to review the site and documentation to point out any bugs and/or user experience issues.
 -   Google Lighthouse
 
