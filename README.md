@@ -1,10 +1,10 @@
 <h1 align="center">HEEEY YOOOU GUUUYS</h1>
 
-[View the live project here.](https://pengols.github.io/Card-Swap/index.html)
+[View the live project here.](https://pengols.github.io/HeeeyYooouGuuuys/index.html)
 
 This is the website for my second Code Institute project focusing primarily on JavaScript.  The site is designed to be responsive and contains an interactive card matching game created using JavaScript. It is styled with a retro 80's feel.
 
-<h2 align="center"><img src="https://raw.githubusercontent.com/pengols/Card-Swap/master/assets/img/screens.png"></h2>
+<h2 align="center"><img src="https://raw.githubusercontent.com/pengols/HeeeyYooouGuuuys/master/assets/img/screens.png"></h2>
 
 ## User Experience (UX)
 
@@ -34,11 +34,11 @@ This is the website for my second Code Institute project focusing primarily on J
 
 *   ### Wireframes
 
-    -   Home Page Wireframe for Desktop & Mobile - [View](https://raw.githubusercontent.com/pengols/Card-Swap/master/mockups/indexhtmlDT&Mob.pdf)
+    -   Home Page Wireframe for Desktop & Mobile - [View](https://raw.githubusercontent.com/pengols/HeeeyYooouGuuuys/master/mockups/indexhtmlDT&Mob.pdf)
 
-    -   Game page Wireframe for Desktop - [View](https://raw.githubusercontent.com/pengols/Card-Swap/master/mockups/Playhtmloverlay&gameDT.pdf)
+    -   Game page Wireframe for Desktop - [View](https://raw.githubusercontent.com/pengols/HeeeyYooouGuuuys/master/mockups/Playhtmloverlay&gameDT.pdf)
 
-    -   Game page Wireframe for Mobile - [View](https://raw.githubusercontent.com/pengols/Card-Swap/master/mockups/Playhtmloverlay&gamemob.pdf)
+    -   Game page Wireframe for Mobile - [View](https://raw.githubusercontent.com/pengols/HeeeyYooouGuuuys/master/mockups/Playhtmloverlay&gamemob.pdf)
 
 ## Features
 
@@ -140,24 +140,24 @@ The Esprima JavaScript Syntax Validator & JSHint were used to validate the JavaS
 
 The project was deployed to GitHub Pages using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/pengols/Card-Swap)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/pengols/HeeeyYooouGuuuys)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://pengols.github.io/Card-Swap/index.html) in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site [link](https://pengols.github.io/HeeeyYooouGuuuys/index.html) in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 
 Forking the GitHub Repository allows a copy of the original repository in GitHub to be created.  The forked repository can be viewed or be changed without affecting the original repository, by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/pengols/Card-Swap)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/pengols/HeeeyYooouGuuuys)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/pengols/Card-Swap)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/pengols/HeeeyYooouGuuuys)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
