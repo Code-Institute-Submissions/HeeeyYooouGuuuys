@@ -11,13 +11,13 @@ function ready() {
   let muteButton = document.getElementById("music-button-game");
   let isMuted = true;
 
-// click eventlistener added to all cards //
+  // click eventlistener added to all cards //
   cards.forEach((card) => {
     card.addEventListener("click", () => {
       game.cardFlip(card);
     });
   });
-// click eventlistener added to overlays and game buttons after page is loaded //
+  // click eventlistener added to overlays and game buttons after page is loaded //
   window.onload = function () {
     if ((reset, muteButton)) {
       reset.addEventListener("click", () => {
@@ -123,12 +123,12 @@ class CardSwap {
 
   // Fisher Yates algorithm using Flexbox style order to number cards //
 
-      shuffleCards() {
-      for(let i = this.cards.length - 1; i > 0; i--) {
-          let randomIndex = Math.floor(Math.random() * (i+1));
-          this.cards[randomIndex].style.order = i;
-          this.cards[i].style.order = randomIndex;
-      }
+  shuffleCards() {
+    for (let i = this.cards.length - 1; i > 0; i--) {
+      let randomIndex = Math.floor(Math.random() * (i + 1));
+      this.cards[randomIndex].style.order = i;
+      this.cards[i].style.order = randomIndex;
+    }
   }
 
   cardFlip(card) {
@@ -182,8 +182,7 @@ class CardSwap {
       .classList.add("visible");
     this.endFlips.innerHTML = this.counter;
     this.endTime.innerHTML = this.timer;
-      this.starRating();
-
+    this.starRating();
   }
   //refreshes page fully on reset or game over overlay click
   resetGame() {
@@ -257,4 +256,3 @@ if (document.readyState === "loading") {
   ready();
   console.log("ready");
 }
-
