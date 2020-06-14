@@ -12,7 +12,7 @@ This is the website for my second Code Institute project focusing primarily on J
 
     -   #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to play a game that tests my memory
+        1. As a First Time Visitor, I want to play a game that tests my memory.
         2. As a First Time Visitor, I want to reminisce about the 80's.
 
     -   #### Returning Visitor Goals
@@ -26,11 +26,11 @@ This is the website for my second Code Institute project focusing primarily on J
 
 -   ### Design
     -   #### Colour Scheme
-        -   A number of 80's style colors are used to evoke a nostalgic feeling. Primarily the site uses a neon pink #F117F1  and purple pallette #8519EA. There are accents of green for which the colour mimics old green screen monitors from the decade #00FF66 and yellow that matches the collectable coins of a famous video game plumber #FFFB00
+        -   A number of 80's style colours are used to evoke a nostalgic feeling. Primarily the site uses a neon pink #F117F1  and purple pallette #8519EA. There are accents of green #00FF66 for which the colour mimics old green screen monitors from the decade and yellow #FFFB00 that matches the collectable coins of a famous video game plumber.
     -   #### Typography
-        -   There are two primary fonts for the website - Press Start P2 & VT323. Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Both Press Start P2 and VT323 are evocative of the fonts used in video games throughout the decade.  I have used Press Start P2 for buttons and titles and VT323 for larger pieces of text as it is easier to read.
+        -   There are two primary fonts for the website - Press Start P2 & VT323. Sans Serif is used as the fallback font, in case for any reason, the fonts aren't being imported into the site correctly. Both Press Start P2 and VT323 are evocative of the fonts used in video games throughout the decade.  I have used Press Start P2 for buttons and titles and VT323 for larger pieces of text as it is easier to read.
     -   #### Imagery
-        -   The background image is designed to be evocative of vector designs from the era. It has a nostlgic aesthetic and uses neon pink and purple from which the site takes design cues. The card images are chosen to reflect pop culture and technology from the decade.
+        -   The background image is designed to be evocative of vector designs from the era. It has a nostalgic aesthetic and uses neon pink and purple from which the site takes design cues. The card images are chosen to reflect pop culture and technology from the decade.
 
 *   ### Wireframes
 
@@ -42,7 +42,7 @@ This is the website for my second Code Institute project focusing primarily on J
 
 ## Features
 
--   Responsive on all device sizes
+-   Responsive on all device sizes.
 
 -   Interactive JavaScript elements including modals, overlays and a gameboard.
 
@@ -65,7 +65,7 @@ This is the website for my second Code Institute project focusing primarily on J
 1. [jQuery:](https://jquery.com/)
     - jQuery came with Bootstrap to make the navbar responsive.
 1. [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Gitpod:](https://gitpod.io/)
@@ -111,7 +111,7 @@ The Esprima JavaScript Syntax Validator & JSHint were used to validate the JavaS
 
     1. As a Frequent User, I want to check to see if there are any newly added difficulty levels.
 
-        1. The user would already be comfortable with the website layout and can easily click the banner message would see if any difficulty levels have been added on navigating to the game page..
+        1. The user would already be comfortable with the website layout and can see if any difficulty levels have been added on navigating to the game page.
 
     2. As a Frequent User, I want to check to see if there are any new images, music or graphics.
 
@@ -199,13 +199,13 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Content considered for future addition
 
--   Implement a scoreboard so users can tack their best scores.
+-   Implement a scoreboard so users can track their best scores.
 -   Implement a difficulty system with easy, medium and hard difficulty levels which increase number of cards on the board.
 
 ### Media
 
 -   [Background Image](https://pixabay.com/users/iywbr-11282422/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3941721) by iywbr.
--   [CRT TV](https://pixabay.com/users/iywbr-11282422/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3941721) by Burak K.
+-   [CRT TV](https://www.pexels.com/photo/black-crt-tv-showing-gray-screen-704555/) by Burak K.
 -   [Polaroid Camera](https://www.pexels.com/photo/camera-photography-vintage-technology-191160/) by Markus Spiske.
 -   [Telephone](https://www.pexels.com/photo/vintage-technology-calling-numbers-105003/) by Markus Spiske.
 -   [Star GIF](https://www.pinterest.co.uk/pin/824721750497754424/) from Pinterest.
