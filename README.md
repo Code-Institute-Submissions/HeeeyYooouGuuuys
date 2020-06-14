@@ -28,9 +28,9 @@ This is the website for my second Code Institute project focusing primarily on J
     -   #### Colour Scheme
         -   A number of 80's style colors are used to evoke a nostalgic feeling. Primarily the site uses a neon pink #F117F1  and purple pallette #8519EA. There are accents of green for which the colour mimics old green screen monitors from the decade #00FF66 and yellow that matches the collectable coins of a famous video game plumber #FFFB00
     -   #### Typography
-        -   There are two primary fonts for the website - Press Start P2 & VT323. Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Both Press Start P2 and VT323 are evocative of the fonts used in video games throughout the decade.  I have used Press Start P2 for buttons and titles and VT323 for larger pieces of text as it is easier to parse.
+        -   There are two primary fonts for the website - Press Start P2 & VT323. Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Both Press Start P2 and VT323 are evocative of the fonts used in video games throughout the decade.  I have used Press Start P2 for buttons and titles and VT323 for larger pieces of text as it is easier to read.
     -   #### Imagery
-        -   The background image is designed to be evocative of vector designs from the era. It has a nostlgic aesthetic and uses neon pink and purple from which the site takes design cues. The card images are chosen to let people reminisce about pop culture frm the decade.
+        -   The background image is designed to be evocative of vector designs from the era. It has a nostlgic aesthetic and uses neon pink and purple from which the site takes design cues. The card images are chosen to reflect pop culture and technology from the decade.
 
 *   ### Wireframes
 
@@ -44,7 +44,7 @@ This is the website for my second Code Institute project focusing primarily on J
 
 -   Responsive on all device sizes
 
--   Interactive elements
+-   Interactive JavaScript elements including modals, overlays and a gameboard.
 
 ## Technologies Used
 
@@ -59,7 +59,7 @@ This is the website for my second Code Institute project focusing primarily on J
 1. [Bootstrap 4.5.0:](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Press Start P2'  and 'VT323' fonts into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Press Start P2' and 'VT323' fonts into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used for the GitHub logo in page footers.
 1. [jQuery:](https://jquery.com/)
