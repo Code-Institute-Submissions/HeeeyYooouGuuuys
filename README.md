@@ -32,7 +32,7 @@ This is the website for my second Code Institute project focusing primarily on J
     -   #### Imagery
         -   The background image is designed to be evocative of vector designs from the era. It has a nostalgic aesthetic and uses neon pink and purple from which the site takes design cues. The card images are chosen to reflect pop culture and technology from the decade.
 
-*   ### Wireframes
+   ### Wireframes
 
     -   Home Page Wireframe for Desktop & Mobile - [View](https://raw.githubusercontent.com/pengols/HeeeyYooouGuuuys/master/mockups/indexhtmlDT&Mob.pdf)
 
@@ -75,13 +75,13 @@ This is the website for my second Code Institute project focusing primarily on J
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate the HTML and CSS of the project to ensure there were no syntax errors.
 
--   [W3C Markup Validator](https://validator.w3.org/#validate_by_input) 
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+-   [W3C Markup Validator](https://validator.w3.org/#validate_by_input)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
 The Esprima JavaScript Syntax Validator & JSHint were used to validate the JavaScript of the project.
 
--   [Esprima JavaScript Syntax Validator](https://esprima.org/demo/validate.html) 
--   [JSHint](https://jshint.com/) 
+-   [Esprima JavaScript Syntax Validator](https://esprima.org/demo/validate.html)
+-   [JSHint](https://jshint.com/)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -213,7 +213,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 -   [Card match error audio](https://freesound.org/people/Breviceps/) by Breviceps.
 -   [Victory fanfare audio](https://freesound.org/people/MattiaGiovanetti/) by MattiaGiovanetti.
 -   [Coin pickup audio](https://freesound.org/people/n_audioman/) by n_audioman.
--   [Card flip audio](https://freesound.org/people/f4ngy/) by f4ngy. 
+-   [Card flip audio](https://freesound.org/people/f4ngy/) by f4ngy.
 
 ### Acknowledgements
 
