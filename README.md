@@ -149,7 +149,7 @@ The Esprima JavaScript Syntax Validator & JSHint were used to validate the JavaS
 -   The website was viewed on a variety of devices such as Windows Desktop, Windows Laptop, Samsung S8, Samsung S9, Samsung S3 tablet, Motorola G4, Amazon Fire, iPhone7, iPhone 8.
 -   Frequent tests were undertaken after major code changes to ensure cross-browser and cross-device compatibility.
 -   Friends and family members of ages ranging from 3 to 73, were asked to review the site and documentation to point out any bugs and/or user experience issues.
--   Google Lighthouse
+-   Google Lighthouse devloper tool in Google Chrome dev tools was used to ensure pages meet best practice.
 
 ### Known Bugs & Resolutions if Applicable
 
@@ -174,15 +174,15 @@ The project was deployed to GitHub Pages using the following steps:
 
 ### Forking the GitHub Repository
 
-By forking the GitHub Repository allows a copy of the original repository in GitHub to be created.  The forked repository can be viewed or changes made without affecting the original repository by using the following steps:
+Forking the GitHub Repository allows a copy of the original repository in GitHub to be created.  The forked repository can be viewed or be changed without affecting the original repository, by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/pengols/Card-Swap)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/pengols/Card-Swap)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
@@ -197,7 +197,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ```
 $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `CI-Clone`...
+> Cloning into `pengols`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
 > remove: Total 10 (delta 1), reused 10 (delta 1)
@@ -210,21 +210,30 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
+-   [w3schools.com](https://www.w3schools.com/howto/howto_css_modals.asp): For guidance on creating JavaScript modals. Code was modified to better fit my needs.
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
--   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
+-   [PortEXE Spooky Card Match Game](https://www.youtube.com/watch?v=3uuQ3g92oPQ) : For guidance on the logic of matching cards and the [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle). Code was modified to better fit my needs.
+
+-   [Marina Ferreira Memory Game](https://marina-ferreira.github.io/tutorials/js/memory-game/) : For guidance on creating new classes on card flip. Code was modified to better fit my needs.
 
 ### Content
 
 -   All content was written by the developer.
 
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
-
 ### Media
 
--   All Images were created by the developer.
+-   [Background Image](https://pixabay.com/users/iywbr-11282422/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3941721) by iywbr.
+-   [CRT TV](https://pixabay.com/users/iywbr-11282422/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3941721) by Burak K.
+-   [Polaroid Camera](https://www.pexels.com/photo/camera-photography-vintage-technology-191160/) by Markus Spiske.
+-   [Telephone](https://www.pexels.com/photo/vintage-technology-calling-numbers-105003/) by Markus Spiske.
+-   [Star GIF](https://www.pinterest.co.uk/pin/824721750497754424/) from Pinterest.
+-   [Background Music](https://patrickdearteaga.com) by Patrick de Arteaga.
+-   [Card match error audio](https://freesound.org/people/Breviceps/) by Breviceps.
+-   [Victory fanfare](https://freesound.org/people/MattiaGiovanetti/) by MattiaGiovanetti.
+-   [Coin pickup](https://freesound.org/people/n_audioman/) by n_audioman.
+-   [Card flip](https://freesound.org/people/f4ngy/) by f4ngy. 
 
 ### Acknowledgements
 
