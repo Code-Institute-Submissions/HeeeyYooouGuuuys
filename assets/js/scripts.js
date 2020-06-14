@@ -117,8 +117,10 @@ class Game {
     }, 1000);
   }
 
+  
+
   stopTimer() {
-    for (var i = 0; i < 99999; i++) window.clearInterval(i);
+    for (var i = 0; i < 99999; i++) window.clearInterval(i); //stops timer on game victory
   }
 
   // Fisher Yates algorithm using Flexbox style order to number cards //
